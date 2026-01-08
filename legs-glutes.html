@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legs & Glutes • My FitBit</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Legs & Glutes</h1>
+  <p>Lower Body Focus • 45-50 min</p>
+</header>
+
+<div class="container">
+
+  <div class="hero" style="background: linear-gradient(135deg, rgba(255,69,58,0.8), rgba(255,159,10,0.6)), url('assets/images/lower.jpg'); background-size: cover; background-position: center;">
+    <div class="workout-progress">
+      <svg class="workout-ring" viewBox="0 0 60 60">
+        <circle class="bg" cx="30" cy="30" r="25"></circle>
+        <circle class="progress" cx="30" cy="30" r="25" id="legs-progress-ring"></circle>
+      </svg>
+      <div class="progress-text" id="legs-progress-text">0%</div>
+    </div>
+    <h2>Sculpt & Strengthen</h2>
+    <p>Target glutes and leg muscles</p>
+  </div>
+
+</div>
+
+<nav class="bottom-nav">
+  <a href="index.html">
+    <span class="nav-icon">🏠</span>
+    <span>Home</span>
+  </a>
+  <a href="schedule.html">
+    <span class="nav-icon">📅</span>
+    <span>Plan</span>
+  </a>
+  <a href="legs-glutes.html" class="active">
+    <span class="nav-icon">💪</span>
+    <span>Workout</span>
+  </a>
+  <a href="nutrition.html">
+    <span class="nav-icon">🥗</span>
+    <span>Fuel</span>
+  </a>
+  <a href="faq.html">
+    <span class="nav-icon">💡</span>
+    <span>Info</span>
+  </a>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const workout = workoutData.workouts['legs-glutes'];
+  const container = document.querySelector('.container');
+  const hero = container.querySelector('.hero');
+  
+  const exercisesByType = {
+    warmup: [],
+    main: [],
+    core: []
+  };
+  
+  workout.exercises.forEach(exercise => {
+    if (exercisesByType[exercise.type]) {
+      exercisesByType[exercise.type].push(exercise);
+    }
+  });
+  
+  let sectionsHTML = '';
+  
+  if (exercisesByType.warmup.length > 0) {
+    sectionsHTML += '<div class="card"><h2>Warm-up</h2>';
+    exercisesByType.warmup.forEach(exercise => {
+      sectionsHTML += generateExerciseHTML(exercise, 'legs');
+    });
+    sectionsHTML += '</div>';
+  }
+  
+  if (exercisesByType.main.length > 0) {
+    sectionsHTML += '<div class="card"><h2>Main Workout</h2>';
+    exercisesByType.main.forEach(exercise => {
+      sectionsHTML += generateExerciseHTML(exercise, 'legs');
+    });
+    sectionsHTML += '</div>';
+  }
+  
+  if (exercisesByType.core.length > 0) {
+    sectionsHTML += '<div class="card"><h2>Core Finisher</h2>';
+    exercisesByType.core.forEach(exercise => {
+      sectionsHTML += generateExerciseHTML(exercise, 'legs');
+    });
+    sectionsHTML += '</div>';
+  }
+  
+  sectionsHTML += `
+    <div class="card">
+      <div class="workout-complete">
+        <button class="start-btn" onclick="markWorkoutComplete('legs-glutes')" style="width: 100%;">
+          ✓ Mark Workout Complete
+        </button>
+      </div>
+    </div>`;
+  
+  hero.insertAdjacentHTML('afterend', sectionsHTML);
+});
+</script>
+<script src="js/app.js"></script>
+</body>
+</html>

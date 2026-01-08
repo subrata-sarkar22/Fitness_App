@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Body Blast • My FitBit</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Full Body Blast</h1>
+  <p>Total Body Workout • 50-55 min</p>
+</header>
+
+<div class="container">
+
+  <div class="hero" style="background: linear-gradient(135deg, rgba(50,215,75,0.8), rgba(10,132,255,0.6)), url('assets/images/fullbody.jpg'); background-size: cover; background-position: center;">
+    <div class="workout-progress">
+      <svg class="workout-ring" viewBox="0 0 60 60">
+        <circle class="bg" cx="30" cy="30" r="25"></circle>
+        <circle class="progress" cx="30" cy="30" r="25" id="full-progress-ring"></circle>
+      </svg>
+      <div class="progress-text" id="full-progress-text">0%</div>
+    </div>
+    <h2>Complete Training</h2>
+    <p>Full body strength & cardio</p>
+  </div>
+
+</div>
+
+<nav class="bottom-nav">
+  <a href="index.html">
+    <span class="nav-icon">🏠</span>
+    <span>Home</span>
+  </a>
+  <a href="schedule.html">
+    <span class="nav-icon">📅</span>
+    <span>Plan</span>
+  </a>
+  <a href="full-body.html" class="active">
+    <span class="nav-icon">💪</span>
+    <span>Workout</span>
+  </a>
+  <a href="nutrition.html">
+    <span class="nav-icon">🥗</span>
+    <span>Fuel</span>
+  </a>
+  <a href="faq.html">
+    <span class="nav-icon">💡</span>
+    <span>Info</span>
+  </a>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const workout = workoutData.workouts['full-body'];
+  const container = document.querySelector('.container');
+  const hero = container.querySelector('.hero');
+  
+  const exercisesByType = {
+    warmup: [],
+    main: [],
+    core: [],
+    cooldown: []
+  };
+  
+  workout.exercises.forEach(exercise => {
+    if (exercisesByType[exercise.type]) {
+      exercisesByType[exercise.type].push(exercise);
+    }
+  });
+  
+  let sectionsHTML = '';
+  
+  if (exercisesByType.warmup.length > 0) {
+    sectionsHTML += '<div class="card"><h2>Warm-up</h2>';
+    exercisesByType.warmup.forEach(exercise => {
+      sectionsHTML += generateExerciseHTML(exercise, 'full');
+    });
+    sectionsHTML += '</div>';
+  }
+  
+  if (exercisesByType.main.length > 0) {
+    sectionsHTML += '<div class="card"><h2>Main Workout</h2>';
+    exercisesByType.main.forEach(exercise => {
+      sectionsHTML += generateExerciseHTML(exercise, 'full');
+    });
+    sectionsHTML += '</div>';
+  }
+  
+  if (exercisesByType.core.length > 0) {
+    sectionsHTML += '<div class="card"><h2>Core Finisher</h2>';
+    exercisesByType.core.forEach(exercise => {
+      sectionsHTML += generateExerciseHTML(exercise, 'full');
+    });
+    sectionsHTML += '</div>';
+  }
+  
+  if (exercisesByType.cooldown.length > 0) {
+    sectionsHTML += '<div class="card"><h2>Cardio Cool-down</h2>';
+    exercisesByType.cooldown.forEach(exercise => {
+      sectionsHTML += generateExerciseHTML(exercise, 'full');
+    });
+    sectionsHTML += '</div>';
+  }
+  
+  sectionsHTML += `
+    <div class="card">
+      <div class="workout-complete">
+        <button class="start-btn" onclick="markWorkoutComplete('full-body')" style="width: 100%;">
+          ✓ Mark Workout Complete
+        </button>
+      </div>
+    </div>`;
+  
+  hero.insertAdjacentHTML('afterend', sectionsHTML);
+});
+</script>
+<script src="js/app.js"></script>
+</body>
+</html>

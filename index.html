@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My FitBit • Fitness Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>My FitBit</h1>
+  <p>Personalized Strength & Fat Loss</p>
+</header>
+
+<div class="container">
+
+  <!-- HERO DASHBOARD -->
+  <div class="hero" style="background: linear-gradient(135deg, rgba(50,215,75,0.8), rgba(10,132,255,0.6)), url('assets/images/hero.jpg'); background-size: cover; background-position: center;">
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-number">78</span>
+        <span class="stat-label">kg</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">5'4"</span>
+        <span class="stat-label">height</span>
+      </div>
+    </div>
+    <h2>Welcome Back, Kajol</h2>
+    <p>Ready for today's workout?</p>
+  </div>
+
+  <!-- TODAY'S WORKOUT -->
+  <div class="card today-card">
+    <div class="today-header">
+      <h2>Today's Focus</h2>
+      <span class="today-date" id="today-date"></span>
+    </div>
+    <div class="today-workout" id="today-workout">
+      <div class="workout-preview">
+        <span class="workout-icon">🏋️</span>
+        <div>
+          <h3 id="workout-title">Lower Body Power</h3>
+          <p id="workout-desc">45-50 min • Strength Training</p>
+        </div>
+        <button class="start-btn" onclick="startWorkout()">START</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEEKLY PROGRESS -->
+  <div class="card">
+    <h2>Weekly Progress</h2>
+    <div class="progress-grid">
+      <div class="ring-wrapper">
+        <svg class="progress-ring" viewBox="0 0 140 140">
+          <circle class="bg" cx="70" cy="70" r="60"></circle>
+          <circle class="progress" cx="70" cy="70" r="60"></circle>
+        </svg>
+        <div class="progress-text" id="progress-percent">0%</div>
+      </div>
+      <div class="progress-stats">
+        <div class="stat-item">
+          <span class="stat-value" id="completed-workouts">0</span>
+          <span class="stat-desc">Completed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">5</span>
+          <span class="stat-desc">This Week</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" id="streak-days">0</span>
+          <span class="stat-desc">Day Streak</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WORKOUT TYPES -->
+  <div class="card">
+    <h2>Workout Library</h2>
+    <div class="workout-grid">
+      <a href="lower-body.html" class="workout-card">
+        <div class="workout-image" style="background-image: url('assets/images/lower.jpg')"></div>
+        <div class="workout-info">
+          <h3>Lower Body Power</h3>
+          <p>Squats • Hip Thrusts • Core</p>
+          <span class="duration">45-50 min</span>
+        </div>
+      </a>
+      
+      <a href="upper-body.html" class="workout-card">
+        <div class="workout-image" style="background-image: url('assets/images/upper.jpg')"></div>
+        <div class="workout-info">
+          <h3>Upper Body Strength</h3>
+          <p>Chest • Back • Arms</p>
+          <span class="duration">45-50 min</span>
+        </div>
+      </a>
+      
+      <a href="cardio-abs.html" class="workout-card">
+        <div class="workout-image" style="background-image: url('assets/images/cardio.jpg')"></div>
+        <div class="workout-info">
+          <h3>Cardio + Abs</h3>
+          <p>HIIT • Core Circuit</p>
+          <span class="duration">30-35 min</span>
+        </div>
+      </a>
+      
+      <a href="legs-glutes.html" class="workout-card">
+        <div class="workout-image" style="background-image: url('assets/images/lower.jpg')"></div>
+        <div class="workout-info">
+          <h3>Legs & Glutes</h3>
+          <p>Lunges • Glute Focus</p>
+          <span class="duration">45-50 min</span>
+        </div>
+      </a>
+      
+      <a href="full-body.html" class="workout-card">
+        <div class="workout-image" style="background-image: url('assets/images/fullbody.jpg')"></div>
+        <div class="workout-info">
+          <h3>Full Body Blast</h3>
+          <p>Total Body • Cardio</p>
+          <span class="duration">50-55 min</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- QUICK ACCESS -->
+  <div class="card">
+    <h2>Quick Access</h2>
+    <div class="quick-links">
+      <a href="nutrition.html" class="quick-link">
+        <span class="quick-icon">🥗</span>
+        <span>Nutrition Guide</span>
+      </a>
+      <a href="schedule.html" class="quick-link">
+        <span class="quick-icon">📅</span>
+        <span>Weekly Plan</span>
+      </a>
+      <a href="faq.html" class="quick-link">
+        <span class="quick-icon">💡</span>
+        <span>Tips & FAQ</span>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<nav class="bottom-nav">
+  <a href="index.html" class="active">
+    <span class="nav-icon">🏠</span>
+    <span>Home</span>
+  </a>
+  <a href="schedule.html">
+    <span class="nav-icon">📅</span>
+    <span>Plan</span>
+  </a>
+  <a href="lower-body.html">
+    <span class="nav-icon">💪</span>
+    <span>Workout</span>
+  </a>
+  <a href="nutrition.html">
+    <span class="nav-icon">🥗</span>
+    <span>Fuel</span>
+  </a>
+  <a href="faq.html">
+    <span class="nav-icon">💡</span>
+    <span>Info</span>
+  </a>
+</nav>
+
+<script src="js/app.js"></script>
+</body>
+</html>

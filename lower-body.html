@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lower Body Power • My FitBit</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Lower Body Power</h1>
+  <p>Strength Training • 45-50 min</p>
+</header>
+
+<div class="container">
+
+  <div class="hero" style="background: linear-gradient(135deg, rgba(255,69,58,0.8), rgba(255,159,10,0.6)), url('assets/images/lower.jpg'); background-size: cover; background-position: center;">
+    <div class="workout-progress">
+      <svg class="workout-ring" viewBox="0 0 60 60">
+        <circle class="bg" cx="30" cy="30" r="25"></circle>
+        <circle class="progress" cx="30" cy="30" r="25" id="lower-progress-ring"></circle>
+      </svg>
+      <div class="progress-text" id="lower-progress-text">0%</div>
+    </div>
+    <h2>Build Strong Legs</h2>
+    <p>Focus on form and controlled movements</p>
+  </div>
+
+  <div class="card">
+    <h2>Warm-up</h2>
+    <div class="exercise-item">
+      <div class="exercise-header">
+        <h3>Brisk walk/cycle</h3>
+        <input type="checkbox" data-progress="lower-warmup" onchange="updateWorkoutProgress('lower')">
+      </div>
+      <div class="exercise-details">
+        <span class="duration">5-10 min</span>
+        <p>Easy pace, gradually increase speed</p>
+        <a href="https://www.youtube.com/watch?v=3WUtJxLv-wI" target="_blank" class="form-link">📹 Watch Form</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Main Workout</h2>
+    
+    <div class="exercise-item">
+      <div class="exercise-header">
+        <h3>Squat/Goblet Squat</h3>
+        <input type="checkbox" data-progress="lower-squat" onchange="updateWorkoutProgress('lower')">
+      </div>
+      <div class="exercise-details">
+        <span class="sets">3×10–12</span>
+        <div class="weight-specs">
+          <div class="weight-option">
+            <span class="weight-label">DB Start</span>
+            <span class="weight-value">4-6 kg</span>
+          </div>
+          <div class="weight-option">
+            <span class="weight-label">Barbell</span>
+            <span class="weight-value">15-20 kg</span>
+          </div>
+        </div>
+        <p>Comfortable depth, knees tracking over toes</p>
+        <a href="https://www.youtube.com/watch?v=MeIiIdhvXT4" target="_blank" class="form-link">📹 Watch Form</a>
+      </div>
+    </div>
+
+    <div class="exercise-item">
+      <div class="exercise-header">
+        <h3>Leg Press</h3>
+        <input type="checkbox" data-progress="lower-legpress" onchange="updateWorkoutProgress('lower')">
+      </div>
+      <div class="exercise-details">
+        <span class="sets">3×10–12</span>
+        <div class="weight-specs">
+          <div class="weight-option">
+            <span class="weight-label">Machine</span>
+            <span class="weight-value">30-40 kg</span>
+          </div>
+        </div>
+        <p>Slow, controlled movement</p>
+        <a href="https://www.youtube.com/watch?v=IZxyjW7MPJQ" target="_blank" class="form-link">📹 Watch Form</a>
+      </div>
+    </div>
+
+    <div class="exercise-item">
+      <div class="exercise-header">
+        <h3>Glute Bridge/Hip Thrust</h3>
+        <input type="checkbox" data-progress="lower-hipthrust" onchange="updateWorkoutProgress('lower')">
+      </div>
+      <div class="exercise-details">
+        <span class="sets">3×12–15</span>
+        <div class="weight-specs">
+          <div class="weight-option">
+            <span class="weight-label">DB/Plate</span>
+            <span class="weight-value">6-10 kg</span>
+          </div>
+          <div class="weight-option">
+            <span class="weight-label">Barbell</span>
+            <span class="weight-value">20-25 kg</span>
+          </div>
+        </div>
+        <p>Squeeze glutes at top, 1 sec pause</p>
+        <a href="https://www.youtube.com/watch?v=LM8XHLYJoYs" target="_blank" class="form-link">📹 Watch Form</a>
+      </div>
+    </div>
+
+    <div class="exercise-item">
+      <div class="exercise-header">
+        <h3>Hamstring Curl/RDL</h3>
+        <input type="checkbox" data-progress="lower-hamstring" onchange="updateWorkoutProgress('lower')">
+      </div>
+      <div class="exercise-details">
+        <span class="sets">3×10–12</span>
+        <div class="weight-specs">
+          <div class="weight-option">
+            <span class="weight-label">DB</span>
+            <span class="weight-value">4-6 kg/hand</span>
+          </div>
+          <div class="weight-option">
+            <span class="weight-label">Barbell</span>
+            <span class="weight-value">20-25 kg</span>
+          </div>
+        </div>
+        <p>Slow control, feel hamstrings</p>
+        <a href="https://www.youtube.com/watch?v=0z8p0U6jJ4E" target="_blank" class="form-link">📹 Watch Form</a>
+      </div>
+    </div>
+
+    <div class="exercise-item">
+      <div class="exercise-header">
+        <h3>Standing Calf Raise</h3>
+        <input type="checkbox" data-progress="lower-calf" onchange="updateWorkoutProgress('lower')">
+      </div>
+      <div class="exercise-details">
+        <span class="sets">3×12–15</span>
+        <div class="weight-specs">
+          <div class="weight-option">
+            <span class="weight-label">Bodyweight</span>
+            <span class="weight-value">→ 2-4 kg</span>
+          </div>
+          <div class="weight-option">
+            <span class="weight-label">Barbell</span>
+            <span class="weight-value">15-20 kg</span>
+          </div>
+        </div>
+        <p>Hold top 1 sec, full range</p>
+        <a href="https://www.youtube.com/watch?v=-M4-G8p8fmc" target="_blank" class="form-link">📹 Watch Form</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Core Finisher</h2>
+    
+    <div class="exercise-item">
+      <div class="exercise-header">
+        <h3>Crunch</h3>
+        <input type="checkbox" data-progress="lower-crunch" onchange="updateWorkoutProgress('lower')">
+      </div>
+      <div class="exercise-details">
+        <span class="sets">3×12–15</span>
+        <p>Lower back lightly pressed, slow</p>
+        <a href="https://www.youtube.com/watch?v=Xyd_fa5zoEU" target="_blank" class="form-link">📹 Watch Form</a>
+      </div>
+    </div>
+
+    <div class="exercise-item">
+      <div class="exercise-header">
+        <h3>Dead Bug/Bird Dog</h3>
+        <input type="checkbox" data-progress="lower-deadbug" onchange="updateWorkoutProgress('lower')">
+      </div>
+      <div class="exercise-details">
+        <span class="sets">3×8–10/side</span>
+        <p>Focus on core control</p>
+        <a href="https://www.youtube.com/watch?v=4XLEnwUr1d8" target="_blank" class="form-link">📹 Watch Form</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="workout-complete">
+      <button class="start-btn" onclick="markWorkoutComplete('lower-body')" style="width: 100%;">
+        ✓ Mark Workout Complete
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<nav class="bottom-nav">
+  <a href="index.html">
+    <span class="nav-icon">🏠</span>
+    <span>Home</span>
+  </a>
+  <a href="schedule.html">
+    <span class="nav-icon">📅</span>
+    <span>Plan</span>
+  </a>
+  <a href="lower-body.html" class="active">
+    <span class="nav-icon">💪</span>
+    <span>Workout</span>
+  </a>
+  <a href="nutrition.html">
+    <span class="nav-icon">🥗</span>
+    <span>Fuel</span>
+  </a>
+  <a href="faq.html">
+    <span class="nav-icon">💡</span>
+    <span>Info</span>
+  </a>
+</nav>
+
+<script src="js/app.js"></script>
+</body>
+</html>
