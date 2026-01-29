@@ -1,0 +1,457 @@
+{
+  "user": {
+    "name": "Kajol",
+    "age": "40+",
+    "weight": "78 kg",
+    "height": "5'4\" (162 cm)",
+    "goal": "Body recomposition—reduce overall fat while building lean muscle tone"
+  },
+  "workouts": {
+    "lower-body": {
+      "title": "Lower Body Power",
+      "duration": "45-50 min",
+      "description": "Strength Training",
+      "exercises": [
+        {
+          "id": "lower-warmup",
+          "name": "Brisk walk/cycle",
+          "type": "warmup",
+          "sets": "",
+          "reps": "",
+          "duration": "5-10 min",
+          "weights": {},
+          "notes": "Easy pace, gradually increase speed",
+          "youtube": "https://www.youtube.com/watch?v=3WUtJxLv-wI"
+        },
+        {
+          "id": "lower-squat",
+          "name": "Squat/Goblet Squat",
+          "type": "main",
+          "sets": "3",
+          "reps": "10–12",
+          "duration": "",
+          "weights": {
+            "dumbbell": "4-6 kg at chest",
+            "barbell": "15-20 kg total"
+          },
+          "notes": "Comfortable depth, knees tracking over toes",
+          "youtube": "https://www.youtube.com/watch?v=MeIiIdhvXT4"
+        },
+        {
+          "id": "lower-legpress",
+          "name": "Leg Press",
+          "type": "main",
+          "sets": "3",
+          "reps": "10–12",
+          "duration": "",
+          "weights": {
+            "machine": "30-40 kg total"
+          },
+          "notes": "Slow, controlled movement",
+          "youtube": "https://www.youtube.com/watch?v=IZxyjW7MPJQ"
+        },
+        {
+          "id": "lower-hipthrust",
+          "name": "Glute Bridge/Hip Thrust",
+          "type": "main",
+          "sets": "3",
+          "reps": "12–15",
+          "duration": "",
+          "weights": {
+            "dumbbell": "6-10 kg plate/DB on hips",
+            "barbell": "20-25 kg bar across hips"
+          },
+          "notes": "Squeeze glutes at top, 1 sec pause",
+          "youtube": "https://www.youtube.com/watch?v=LM8XHLYJoYs"
+        },
+        {
+          "id": "lower-hamstring",
+          "name": "Hamstring Curl/RDL",
+          "type": "main",
+          "sets": "3",
+          "reps": "10–12",
+          "duration": "",
+          "weights": {
+            "dumbbell": "4-6 kg/hand",
+            "barbell": "20-25 kg Romanian deadlift"
+          },
+          "notes": "Slow control, feel hamstrings",
+          "youtube": "https://www.youtube.com/watch?v=0z8p0U6jJ4E"
+        },
+        {
+          "id": "lower-calf",
+          "name": "Standing Calf Raise",
+          "type": "main",
+          "sets": "3",
+          "reps": "12–15",
+          "duration": "",
+          "weights": {
+            "bodyweight": "→ 2-4 kg/hand when easy",
+            "barbell": "15-20 kg bar"
+          },
+          "notes": "Hold top 1 sec, full range",
+          "youtube": "https://www.youtube.com/watch?v=-M4-G8p8fmc"
+        },
+        {
+          "id": "lower-crunch",
+          "name": "Crunch",
+          "type": "core",
+          "sets": "3",
+          "reps": "12–15",
+          "duration": "",
+          "weights": {},
+          "notes": "Lower back lightly pressed, slow",
+          "youtube": "https://www.youtube.com/watch?v=Xyd_fa5zoEU"
+        },
+        {
+          "id": "lower-deadbug",
+          "name": "Dead Bug/Bird Dog",
+          "type": "core",
+          "sets": "3",
+          "reps": "8–10/side",
+          "duration": "",
+          "weights": {},
+          "notes": "Focus on core control",
+          "youtube": "https://www.youtube.com/watch?v=4XLEnwUr1d8"
+        }
+      ]
+    },
+    "upper-body": {
+      "title": "Upper Body Strength",
+      "duration": "45-50 min",
+      "description": "Chest, Back & Arms",
+      "exercises": [
+        {
+          "id": "upper-warmup",
+          "name": "Brisk walk warm-up",
+          "type": "warmup",
+          "sets": "",
+          "reps": "",
+          "duration": "5-10 min",
+          "weights": {},
+          "notes": "Gradual pace increase",
+          "youtube": "https://www.youtube.com/watch?v=3WUtJxLv-wI"
+        },
+        {
+          "id": "upper-chest",
+          "name": "Chest Press",
+          "type": "main",
+          "sets": "3",
+          "reps": "8–12",
+          "duration": "",
+          "weights": {
+            "dumbbell": "3-4 kg/hand",
+            "barbell": "15-20 kg total"
+          },
+          "notes": "Push elbows back, squeeze chest",
+          "youtube": "https://www.youtube.com/watch?v=rT7DgCr-3pg"
+        },
+        {
+          "id": "upper-row",
+          "name": "Lat Pulldown/Row",
+          "type": "main",
+          "sets": "3",
+          "reps": "8–12",
+          "duration": "",
+          "weights": {
+            "dumbbell": "3-4 kg/hand DB row",
+            "barbell": "20 kg barbell row"
+          },
+          "notes": "Squeeze shoulder blades, controlled",
+          "youtube": "https://www.youtube.com/watch?v=CAwf7n6Luuc"
+        },
+        {
+          "id": "upper-shoulder",
+          "name": "Shoulder Press",
+          "type": "main",
+          "sets": "2-3",
+          "reps": "10–12",
+          "duration": "",
+          "weights": {
+            "dumbbell": "2-3 kg/hand",
+            "barbell": "15 kg bar only"
+          },
+          "notes": "Do not arch lower back",
+          "youtube": "https://www.youtube.com/watch?v=B-aVuyhvLHU"
+        },
+        {
+          "id": "upper-biceps",
+          "name": "Biceps Curl",
+          "type": "main",
+          "sets": "2-3",
+          "reps": "12–15",
+          "duration": "",
+          "weights": {
+            "dumbbell": "2-3 kg/hand"
+          },
+          "notes": "No swinging, full range",
+          "youtube": "https://www.youtube.com/watch?v=ykJmrZ5v0Oo"
+        },
+        {
+          "id": "upper-triceps",
+          "name": "Triceps Extension",
+          "type": "main",
+          "sets": "2-3",
+          "reps": "12–15",
+          "duration": "",
+          "weights": {
+            "pushdown": "2-3 kg/hand kickback"
+          },
+          "notes": "Controlled, no momentum",
+          "youtube": "https://www.youtube.com/watch?v=2-LAMcpzODU"
+        },
+        {
+          "id": "upper-cardio",
+          "name": "Easy Walk/Cycle",
+          "type": "cooldown",
+          "sets": "",
+          "reps": "",
+          "duration": "10-20 min",
+          "weights": {},
+          "notes": "Conversational pace, bring heart rate down",
+          "youtube": "https://www.youtube.com/watch?v=3WUtJxLv-wI"
+        }
+      ]
+    },
+    "cardio-abs": {
+      "title": "Cardio + Abs",
+      "duration": "30-35 min",
+      "description": "HIIT & Core Circuit",
+      "exercises": [
+        {
+          "id": "cardio-main",
+          "name": "Brisk Walk/Cycle",
+          "type": "cardio",
+          "sets": "",
+          "reps": "",
+          "duration": "25-30 min",
+          "weights": {},
+          "notes": "RPE 6-7/10, slightly breathless but can speak",
+          "youtube": "https://www.youtube.com/watch?v=3WUtJxLv-wI"
+        },
+        {
+          "id": "cardio-crunch",
+          "name": "Reverse Crunch",
+          "type": "abs",
+          "sets": "3",
+          "reps": "12–15",
+          "duration": "",
+          "weights": {},
+          "notes": "Controlled up/down, lower back pressed",
+          "youtube": "https://www.youtube.com/watch?v=hyv14e2QDq0"
+        },
+        {
+          "id": "cardio-taps",
+          "name": "Heel Taps/Toe Taps",
+          "type": "abs",
+          "sets": "3",
+          "reps": "12–15/side",
+          "duration": "",
+          "weights": {},
+          "notes": "Lying on back, alternate legs slowly",
+          "youtube": "https://www.youtube.com/watch?v=5xWzU7bL5xQ"
+        },
+        {
+          "id": "cardio-plank",
+          "name": "Side Plank",
+          "type": "abs",
+          "sets": "2-3",
+          "reps": "20–30 sec/side",
+          "duration": "",
+          "weights": {},
+          "notes": "On knees or feet, straight line, core tight",
+          "youtube": "https://www.youtube.com/watch?v=K2VljzCC16g"
+        },
+        {
+          "id": "cardio-cooldown",
+          "name": "Gentle Stretching",
+          "type": "cooldown",
+          "sets": "",
+          "reps": "",
+          "duration": "5 min",
+          "weights": {},
+          "notes": "Focus on legs, hips, and core",
+          "youtube": "https://www.youtube.com/watch?v=sTxC3J3gQEU"
+        }
+      ]
+    },
+    "legs-glutes": {
+      "title": "Legs & Glutes",
+      "duration": "45-50 min",
+      "description": "Lower Body Focus",
+      "exercises": [
+        {
+          "id": "legs-warmup",
+          "name": "Brisk walk/cycle warm-up",
+          "type": "warmup",
+          "sets": "",
+          "reps": "",
+          "duration": "5-10 min",
+          "weights": {},
+          "notes": "Easy pace",
+          "youtube": "https://www.youtube.com/watch?v=3WUtJxLv-wI"
+        },
+        {
+          "id": "legs-lunge",
+          "name": "Walking Lunge/Split Squat",
+          "type": "main",
+          "sets": "3",
+          "reps": "8–10/leg",
+          "duration": "",
+          "weights": {
+            "bodyweight": "→ 3-4 kg/hand",
+            "barbell": "15-20 kg bar on back (if stable)"
+          },
+          "notes": "Step length natural, front knee 90°",
+          "youtube": "https://www.youtube.com/watch?v=QOVaHwm-Q6U"
+        },
+        {
+          "id": "legs-extension",
+          "name": "Leg Extension",
+          "type": "main",
+          "sets": "3",
+          "reps": "10–12",
+          "duration": "",
+          "weights": {
+            "machine": "10-15 kg stack"
+          },
+          "notes": "Do not lock knees",
+          "youtube": "https://www.youtube.com/watch?v=YyvSfVjQeL0"
+        },
+        {
+          "id": "legs-hipthrust",
+          "name": "Hip Thrust/Cable Kickback",
+          "type": "main",
+          "sets": "3",
+          "reps": "12–15",
+          "duration": "",
+          "weights": {
+            "dumbbell": "8-12 kg DB/plate thrust",
+            "cable": "5-8 kg kickback"
+          },
+          "notes": "Focus on glute activation",
+          "youtube": "https://www.youtube.com/watch?v=LM8XHLYJoYs"
+        },
+        {
+          "id": "legs-raise",
+          "name": "Side-lying Leg Raise",
+          "type": "main",
+          "sets": "3",
+          "reps": "15/side",
+          "duration": "",
+          "weights": {
+            "ankle": "1-2 kg ankle weight if available"
+          },
+          "notes": "Slow, controlled, feel outer hip",
+          "youtube": "https://www.youtube.com/watch?v=KFYgDqB2q3k"
+        },
+        {
+          "id": "legs-plank",
+          "name": "Plank on Elbows",
+          "type": "core",
+          "sets": "2-3",
+          "reps": "20–30 sec",
+          "duration": "",
+          "weights": {},
+          "notes": "Core tight, no sagging, straight line",
+          "youtube": "https://www.youtube.com/watch?v=pSHjTRCQxIw"
+        }
+      ]
+    },
+    "full-body": {
+      "title": "Full Body Blast",
+      "duration": "50-55 min",
+      "description": "Total Body Workout",
+      "exercises": [
+        {
+          "id": "full-warmup",
+          "name": "Brisk walk warm-up",
+          "type": "warmup",
+          "sets": "",
+          "reps": "",
+          "duration": "5-10 min",
+          "weights": {},
+          "notes": "Gradual pace increase",
+          "youtube": "https://www.youtube.com/watch?v=3WUtJxLv-wI"
+        },
+        {
+          "id": "full-squat",
+          "name": "Squat/Leg Press",
+          "type": "main",
+          "sets": "3",
+          "reps": "8–10",
+          "duration": "",
+          "weights": {
+            "goblet": "4-6 kg at chest",
+            "barbell": "20 kg back squat"
+          },
+          "notes": "Slightly heavier load than Day 1",
+          "youtube": "https://www.youtube.com/watch?v=MeIiIdhvXT4"
+        },
+        {
+          "id": "full-row",
+          "name": "Row (Machine/DB/Bar)",
+          "type": "main",
+          "sets": "3",
+          "reps": "8–12",
+          "duration": "",
+          "weights": {
+            "dumbbell": "3-4 kg/hand DB row",
+            "barbell": "20 kg barbell row"
+          },
+          "notes": "Squeeze shoulder blades",
+          "youtube": "https://www.youtube.com/watch?v=CAwf7n6Luuc"
+        },
+        {
+          "id": "full-chest",
+          "name": "Chest Press/Bench Press",
+          "type": "main",
+          "sets": "3",
+          "reps": "8–12",
+          "duration": "",
+          "weights": {
+            "dumbbell": "3-4 kg/hand",
+            "barbell": "15-20 kg bar bench"
+          },
+          "notes": "Push elbows back, controlled",
+          "youtube": "https://www.youtube.com/watch?v=rT7DgCr-3pg"
+        },
+        {
+          "id": "full-lateral",
+          "name": "Lateral Raise/Front Raise",
+          "type": "main",
+          "sets": "2",
+          "reps": "12–15",
+          "duration": "",
+          "weights": {
+            "dumbbell": "1-2 kg/hand"
+          },
+          "notes": "Light, high reps",
+          "youtube": "https://www.youtube.com/watch?v=3VcKaXpzqRo"
+        },
+        {
+          "id": "full-knee",
+          "name": "Standing Knee Raises",
+          "type": "core",
+          "sets": "2-3",
+          "reps": "15/side",
+          "duration": "",
+          "weights": {},
+          "notes": "Core focus, no swinging, controlled",
+          "youtube": "https://www.youtube.com/watch?v=7QFJ5H9y1x8"
+        },
+        {
+          "id": "full-cooldown",
+          "name": "Easy Walk/Cycle",
+          "type": "cooldown",
+          "sets": "",
+          "reps": "",
+          "duration": "10-15 min",
+          "weights": {},
+          "notes": "Bring heart rate down gradually",
+          "youtube": "https://www.youtube.com/watch?v=3WUtJxLv-wI"
+        }
+      ]
+    }
+  }
+}
