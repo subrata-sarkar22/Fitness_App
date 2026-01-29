@@ -10,8 +10,14 @@
 <body>
 
 <header>
+  <a href="index.html" style="position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 8px; border-radius: 12px; cursor: pointer; font-size: 1.2rem; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; text-decoration: none;" title="Home">
+    <svg class="icon" viewBox="0 0 24 24" style="width: 20px; height: 20px;">
+      <path d="M3 11L12 3l9 8" />
+      <path d="M5 10v10h14V10" />
+    </svg>
+  </a>
   <h1>Nutrition Guide</h1>
-  <p>Fuel Your Transformation</p>
+  <p id="nutrition-subtitle">Fuel Your Transformation</p>
 </header>
 
 <div class="container">
@@ -22,115 +28,49 @@
   </div>
 
   <div class="card">
-    <h2>Daily Targets for Kajol</h2>
-    <div class="nutrition-grid">
-      <div class="nutrition-item">
-        <div class="nutrition-icon">🥩</div>
-        <div class="nutrition-info">
-          <h3>Protein</h3>
-          <span class="target">125–170g</span>
-          <p>1.6–2.2g per kg body weight</p>
-        </div>
-      </div>
-      
-      <div class="nutrition-item">
-        <div class="nutrition-icon">💧</div>
-        <div class="nutrition-info">
-          <h3>Water</h3>
-          <span class="target">2.5–3L</span>
-          <p>More on training days</p>
-        </div>
-      </div>
-      
-      <div class="nutrition-item">
-        <div class="nutrition-icon">😴</div>
-        <div class="nutrition-info">
-          <h3>Sleep</h3>
-          <span class="target">7–9 hours</span>
-          <p>Crucial for recovery & fat loss</p>
-        </div>
-      </div>
-      
-      <div class="nutrition-item">
-        <div class="nutrition-icon">🎯</div>
-        <div class="nutrition-info">
-          <h3>Calorie Deficit</h3>
-          <span class="target">300–500</span>
-          <p>Small, sustainable deficit</p>
-        </div>
-      </div>
+    <h2 id="daily-targets-title">Daily Targets</h2>
+    <div class="nutrition-grid" id="nutrition-grid">
+      <div style="text-align: center; padding: 40px; color: var(--muted);">Loading...</div>
     </div>
   </div>
 
   <div class="card">
     <h2>Macronutrient Balance</h2>
-    <div class="macro-breakdown">
-      <div class="macro-item">
-        <div class="macro-bar protein">
-          <span class="macro-label">Protein</span>
-          <span class="macro-percent">30-35%</span>
-        </div>
-      </div>
-      <div class="macro-item">
-        <div class="macro-bar carbs">
-          <span class="macro-label">Carbs</span>
-          <span class="macro-percent">35-40%</span>
-        </div>
-      </div>
-      <div class="macro-item">
-        <div class="macro-bar fats">
-          <span class="macro-label">Fats</span>
-          <span class="macro-percent">25-30%</span>
-        </div>
-      </div>
+    <div class="macro-breakdown" id="macro-breakdown">
+      <div style="text-align: center; padding: 40px; color: var(--muted);">Loading...</div>
     </div>
   </div>
 
   <div class="card">
     <h2>Key Guidelines</h2>
-    <div class="guidelines">
-      <div class="guideline-item">
-        <span class="guideline-icon">🍽️</span>
-        <div>
-          <h3>Meal Distribution</h3>
-          <p>30-40g protein per meal, spread throughout the day</p>
-        </div>
-      </div>
-      
-      <div class="guideline-item">
-        <span class="guideline-icon">🥦</span>
-        <div>
-          <h3>Whole Foods Focus</h3>
-          <p>Whole grains, oats, fruits, vegetables for carbs</p>
-        </div>
-      </div>
-      
-      <div class="guideline-item">
-        <span class="guideline-icon">🥑</span>
-        <div>
-          <h3>Healthy Fats</h3>
-          <p>Olive oil, nuts, fatty fish for essential fats</p>
-        </div>
-      </div>
-      
-      <div class="guideline-item">
-        <span class="guideline-icon">💪</span>
-        <div>
-          <h3>Post-Workout</h3>
-          <p>Protein within 2 hours of training for recovery</p>
-        </div>
-      </div>
+    <div class="guidelines" id="guidelines">
+      <div style="text-align: center; padding: 40px; color: var(--muted);">Loading...</div>
     </div>
   </div>
 
-  <div class="card">
+  <div class="card" id="activity-card">
     <h2>Daily Activity</h2>
-    <div class="activity-target">
-      <div class="activity-ring">
-        <span class="activity-number">7,000+</span>
-        <span class="activity-label">Steps Daily</span>
+    <div class="activity-target" id="activity-target">
+      <div style="text-align: center; padding: 40px; color: var(--muted);">Loading...</div>
+    </div>
+  </div>
+
+  <div class="card" id="food-quality-card" style="display: none;">
+    <h2>Food Quality Guidelines</h2>
+    <div id="food-quality-guidelines">
+      <!-- Dynamically populated -->
+    </div>
+  </div>
+
+  <div class="card" id="supplements-card" style="display: none;">
+    <h2 style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="document.getElementById('supplements-content').classList.toggle('open'); this.querySelector('span').textContent = document.getElementById('supplements-content').classList.contains('open') ? '▼' : '▶'">
+      Supplements <span style="font-size: 0.8em;">▶</span>
+    </h2>
+    <div id="supplements-content" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+      <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 16px;">⚠️ Consult your healthcare provider before starting any supplements</p>
+      <div id="supplements-list">
+        <!-- Dynamically populated -->
       </div>
-      <p>Maintain outside of gym sessions for optimal fat loss</p>
     </div>
   </div>
 
@@ -138,23 +78,40 @@
 
 <nav class="bottom-nav">
   <a href="index.html">
-    <span class="nav-icon">🏠</span>
+    <svg class="icon" viewBox="0 0 24 24">
+      <path d="M3 11L12 3l9 8" />
+      <path d="M5 10v10h14V10" />
+    </svg>
     <span>Home</span>
   </a>
   <a href="schedule.html">
-    <span class="nav-icon">📅</span>
+    <svg class="icon" viewBox="0 0 24 24">
+      <rect x="3" y="4" width="18" height="18" rx="3" />
+      <path d="M16 2v4M8 2v4M3 10h18" />
+    </svg>
     <span>Plan</span>
   </a>
   <a href="lower-body.html">
-    <span class="nav-icon">💪</span>
+    <svg class="icon" viewBox="0 0 24 24">
+      <path d="M4 12h16" />
+      <path d="M2 9v6M22 9v6" />
+      <path d="M7 9v6M17 9v6" />
+    </svg>
     <span>Workout</span>
   </a>
   <a href="nutrition.html" class="active">
-    <span class="nav-icon">🥗</span>
+    <svg class="icon" viewBox="0 0 24 24">
+      <path d="M12 7c4-3 8 1 8 6s-4 8-8 8-8-3-8-8 4-9 8-6z" />
+      <path d="M12 7c0-2 1-3 3-4" />
+    </svg>
     <span>Fuel</span>
   </a>
   <a href="faq.html">
-    <span class="nav-icon">💡</span>
+    <svg class="icon" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 16v-4" />
+      <circle cx="12" cy="8" r="1" />
+    </svg>
     <span>Info</span>
   </a>
 </nav>
@@ -162,3 +119,9 @@
 <script src="js/app.js"></script>
 </body>
 </html>
+
+<style>
+#supplements-content.open {
+  max-height: 1000px !important;
+}
+</style>

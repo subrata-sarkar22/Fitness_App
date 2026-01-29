@@ -1,0 +1,1350 @@
+{
+	"user": {
+		"name": "Subrata",
+		"age": "35",
+		"weight": "74",
+		"weightUnit": "kg",
+		"height": "5'10\"",
+		"heightCm": "178 cm",
+		"goal": "Build a hybrid athletic physique with strength, endurance, mobility and long-term back health",
+		"dietType": "Indian vegetarian",
+      	"trainingTime": "morning"
+	},
+	"weeklySchedule": {
+		"1": "lower-body-strength-zone2",
+		"2": "upper-body-strength",
+		"3": "aerobic-base-mobility",
+		"4": "full-body-athletic-power",
+		"5": "hiit-speed-indoor",
+		"6": "active-recovery-aerobic",
+		"0": "rest"
+	},
+	"workoutLibrary": [
+		{
+			"id": "lower-body-strength-zone2",
+			"title": "Lower Body Strength + Zone 2",
+			"description": "Back-safe lower body strength focused on glutes, quads, hamstrings and core stability followed by aerobic conditioning",
+			"duration": "70–75 min",
+			"image": "assets/images/lower-body-athletic.jpg"
+		},
+		{
+			"id": "upper-body-strength",
+			"title": "Upper Body Strength",
+			"description": "Hybrid athlete upper body session focusing on push–pull strength, shoulder health, posture and core stability",
+			"duration": "65–70 min",
+			"image": "assets/images/upper-body-athletic.jpg"
+		},
+		{
+			"id": "aerobic-base-mobility",
+			"title": "Aerobic Base + Mobility",
+			"description": "Low-intensity aerobic conditioning combined with full-body mobility to improve endurance, recovery, fat metabolism and lower-back resilience",
+			"duration": "60–75 min",
+			"image": "assets/images/aerobic-mobility.jpg"
+		},
+		{
+			"id": "full-body-athletic-power",
+			"title": "Full Body Athletic Power",
+			"description": "Hybrid athlete full-body power session focused on strength, explosiveness, posture, core stability, and lower-back resilience",
+			"duration": "65–75 min",
+			"image": "assets/images/full-body-power.jpg"
+		},
+		{
+			"id": "hiit-speed-indoor",
+			"title": "HIIT & Speed (Indoor)",
+			"description": "Indoor hybrid HIIT session focused on speed, VO₂ max, athletic conditioning, and hormonal response while protecting joints and lower back",
+			"duration": "45–55 min",
+			"image": "assets/images/hiit-speed.jpg"
+		},
+		{
+			"id": "active-recovery-aerobic",
+			"title": "Active Recovery + Aerobic Capacity",
+			"description": "Low-stress aerobic work with extended mobility and recovery focus to enhance endurance and long-term joint health",
+			"duration": "50–65 min",
+			"image": "assets/images/active-recovery.jpg"
+		}
+	],
+	"workouts": {
+		"lower-body-strength-zone2": {
+			"id": "lower-body-strength-zone2",
+			"icon": "🏋️",
+			"title": "Lower Body Strength + Zone 2",
+			"duration": "70–75 min",
+			"description": "Back-safe lower body strength session focused on glutes, quads, hamstrings and core stability with Zone 2 conditioning",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Reset & Activation",
+					"duration": "6–8 min",
+					"exercises": [
+						{
+							"id": "lb-warmup-breathing",
+							"name": "Diaphragmatic Breathing",
+							"sets": "1",
+							"reps": "5 slow breaths",
+							"target": [
+								"nervous system",
+								"core"
+							],
+							"notes": "Breathe into belly, ribs down, relax shoulders"
+						},
+						{
+							"id": "lb-warmup-catcow",
+							"name": "Cat–Cow",
+							"sets": "1",
+							"reps": "10–12",
+							"target": [
+								"spine mobility"
+							],
+							"notes": "Slow controlled movement"
+						},
+						{
+							"id": "lb-warmup-glutebridge",
+							"name": "Glute Bridge",
+							"sets": "2",
+							"reps": "15",
+							"rest": "30 sec",
+							"tempo": "2–1–2",
+							"target": [
+								"glutes"
+							],
+							"notes": "Pause and squeeze at top"
+						},
+						{
+							"id": "lb-warmup-birddog",
+							"name": "Bird Dog",
+							"sets": "2",
+							"reps": "10 per side",
+							"target": [
+								"core stability"
+							],
+							"notes": "No hip rotation"
+						}
+					]
+				},
+				{
+					"type": "mobility",
+					"title": "Hip & Spine Mobility",
+					"duration": "6–8 min",
+					"exercises": [
+						{
+							"id": "lb-mobility-wgs",
+							"name": "World’s Greatest Stretch",
+							"sets": "1",
+							"reps": "5 per side",
+							"target": [
+								"hips",
+								"thoracic spine"
+							],
+							"notes": "Pause and breathe"
+						},
+						{
+							"id": "lb-mobility-9090",
+							"name": "90/90 Hip Rotations",
+							"sets": "1",
+							"reps": "8–10",
+							"target": [
+								"hip internal rotation"
+							],
+							"notes": "Sit tall, rotate slowly"
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Primary Strength",
+					"duration": "35–40 min",
+					"exercises": [
+						{
+							"id": "lb-main-gobletsquat",
+							"name": "Goblet Squat",
+							"sets": "4",
+							"reps": "6–8",
+							"rest": "90 sec",
+							"tempo": "3–1–1",
+							"rir": "2",
+							"target": [
+								"quads",
+								"glutes"
+							],
+							"weights": {
+								"dumbbell": "16–24 kg"
+							},
+							"notes": "Chest tall, brace core, knees track over toes"
+						},
+						{
+							"id": "lb-main-bulgarian",
+							"name": "Bulgarian Split Squat",
+							"sets": "3",
+							"reps": "8 per leg",
+							"rest": "90 sec",
+							"tempo": "3–1–1",
+							"rir": "2",
+							"target": [
+								"glutes",
+								"quads"
+							],
+							"weights": {
+								"dumbbell": "8–16 kg each hand"
+							},
+							"notes": "Slow descent, stay balanced"
+						},
+						{
+							"id": "lb-main-rdl",
+							"name": "Romanian Deadlift (DB)",
+							"sets": "3",
+							"reps": "8",
+							"rest": "90 sec",
+							"tempo": "3–1–1",
+							"rir": "2",
+							"target": [
+								"hamstrings",
+								"glutes"
+							],
+							"weights": {
+								"dumbbell": "14–24 kg each hand"
+							},
+							"notes": "Hip hinge, neutral spine"
+						}
+					]
+				},
+				{
+					"type": "core",
+					"title": "Core Stability",
+					"duration": "6–8 min",
+					"exercises": [
+						{
+							"id": "lb-core-deadbug",
+							"name": "Dead Bug",
+							"sets": "3",
+							"reps": "12",
+							"rest": "45 sec",
+							"target": [
+								"core stability"
+							],
+							"notes": "Lower back stays pressed"
+						}
+					]
+				},
+				{
+					"type": "conditioning",
+					"title": "Zone 2 Conditioning",
+					"duration": "10–15 min",
+					"exercises": [
+						{
+							"id": "lb-cardio-zone2",
+							"name": "Incline Treadmill Walk / Stationary Cycle",
+							"sets": "1",
+							"duration": "10–15 min",
+							"intensity": "zone 2",
+							"target": [
+								"aerobic base"
+							],
+							"notes": "Conversational pace, nasal breathing"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cool Down & Recovery",
+					"duration": "5–8 min",
+					"exercises": [
+						{
+							"id": "lb-cooldown-flow",
+							"name": "Stretch & Breathing Flow",
+							"sets": "1",
+							"duration": "5–8 min",
+							"target": [
+								"hips",
+								"spine",
+								"recovery"
+							],
+							"notes": "Child’s pose, hip flexor stretch, spinal twists"
+						}
+					]
+				}
+			]
+		},
+		"upper-body-strength": {
+			"id": "upper-body-strength",
+			"icon": "💪",
+			"title": "Upper Body Strength",
+			"duration": "65–70 min",
+			"description": "Upper body strength session designed for hybrid athletes with balanced pushing and pulling, shoulder durability and core stability",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Reset & Activation",
+					"duration": "6–8 min",
+					"exercises": [
+						{
+							"id": "ub-warmup-breathing",
+							"name": "Diaphragmatic Breathing",
+							"sets": "1",
+							"reps": "5 slow breaths",
+							"target": [
+								"nervous system",
+								"core"
+							],
+							"notes": "Breathe into belly, ribs down, relax neck and shoulders"
+						},
+						{
+							"id": "ub-warmup-catcow",
+							"name": "Cat–Cow",
+							"sets": "1",
+							"reps": "10–12",
+							"target": [
+								"spine mobility"
+							],
+							"notes": "Slow, controlled spinal movement"
+						},
+						{
+							"id": "ub-warmup-armcircles",
+							"name": "Arm Circles",
+							"sets": "1",
+							"reps": "15 forward + 15 backward",
+							"target": [
+								"shoulder mobility"
+							],
+							"notes": "Start small, gradually increase range"
+						}
+					]
+				},
+				{
+					"type": "mobility",
+					"title": "Shoulder & Upper Back Mobility",
+					"duration": "6–8 min",
+					"exercises": [
+						{
+							"id": "ub-mobility-pullapart",
+							"name": "Band Pull-Apart",
+							"sets": "2",
+							"reps": "15",
+							"target": [
+								"upper back",
+								"rear delts"
+							],
+							"notes": "Squeeze shoulder blades together"
+						},
+						{
+							"id": "ub-mobility-wallslides",
+							"name": "Scapular Wall Slides",
+							"sets": "2",
+							"reps": "10",
+							"target": [
+								"scapular mobility"
+							],
+							"notes": "Keep ribs down, move slowly"
+						},
+						{
+							"id": "ub-mobility-externalrotation",
+							"name": "Band External Rotation",
+							"sets": "2",
+							"reps": "12 per side",
+							"target": [
+								"rotator cuff"
+							],
+							"notes": "Elbow pinned to side"
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Primary Upper Body Strength",
+					"duration": "30–35 min",
+					"exercises": [
+						{
+							"id": "ub-main-pullups",
+							"name": "Pull-ups / Assisted Pull-ups",
+							"sets": "4",
+							"reps": "5–6",
+							"rest": "120 sec",
+							"rir": "2",
+							"target": [
+								"lats",
+								"upper back"
+							],
+							"notes": "Chest to bar, no swinging"
+						},
+						{
+							"id": "ub-main-inclinedbpress",
+							"name": "Incline Dumbbell Press",
+							"sets": "4",
+							"reps": "8",
+							"rest": "90 sec",
+							"tempo": "2–1–1",
+							"rir": "2",
+							"target": [
+								"chest",
+								"shoulders",
+								"triceps"
+							],
+							"weights": {
+								"dumbbell": "10–22 kg each hand"
+							},
+							"notes": "Shoulder blades tucked, ribs down"
+						},
+						{
+							"id": "ub-main-dbrown",
+							"name": "One-Arm Dumbbell Row",
+							"sets": "3",
+							"reps": "10 per side",
+							"rest": "75 sec",
+							"tempo": "2–1–1",
+							"rir": "2",
+							"target": [
+								"lats",
+								"mid-back"
+							],
+							"weights": {
+								"dumbbell": "16–30 kg"
+							},
+							"notes": "Pull elbow toward hip, neutral spine"
+						},
+						{
+							"id": "ub-main-landminepress",
+							"name": "Landmine Press / Machine Shoulder Press",
+							"sets": "3",
+							"reps": "8",
+							"rest": "75 sec",
+							"rir": "2",
+							"target": [
+								"shoulders",
+								"triceps"
+							],
+							"notes": "Neutral grip, no lower-back arch"
+						}
+					]
+				},
+				{
+					"type": "core",
+					"title": "Core Stability",
+					"duration": "5–6 min",
+					"exercises": [
+						{
+							"id": "ub-core-pallof",
+							"name": "Pallof Press (Cable)",
+							"sets": "3",
+							"reps": "12",
+							"rest": "45 sec",
+							"target": [
+								"anti-rotation core"
+							],
+							"notes": "Resist rotation, stay tall"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cool Down & Recovery",
+					"duration": "5–8 min",
+					"exercises": [
+						{
+							"id": "ub-cooldown-stretch",
+							"name": "Upper Body Stretch Flow",
+							"sets": "1",
+							"duration": "5–8 min",
+							"target": [
+								"shoulders",
+								"thoracic spine",
+								"recovery"
+							],
+							"notes": "Child’s pose, thoracic rotations, lat stretch, nasal breathing"
+						}
+					]
+				}
+			]
+		},
+		"aerobic-base-mobility": {
+			"id": "aerobic-base-mobility",
+			"icon": "🫀",
+			"title": "Aerobic Base + Mobility",
+			"duration": "60–75 min",
+			"description": "Hybrid athlete aerobic base session focused on Zone 2 endurance, nervous system recovery, hip and spine mobility, and long-term back health",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Reset & Activation",
+					"duration": "8–10 min",
+					"exercises": [
+						{
+							"id": "d3-warmup-breathing",
+							"name": "Diaphragmatic Breathing",
+							"sets": "1",
+							"reps": "5 slow breaths",
+							"target": [
+								"nervous system",
+								"core"
+							],
+							"notes": "Inhale through nose, expand belly, ribs down, relax neck and shoulders"
+						},
+						{
+							"id": "d3-warmup-catcow",
+							"name": "Cat–Cow",
+							"sets": "1",
+							"reps": "10–12",
+							"target": [
+								"spine mobility"
+							],
+							"notes": "Slow, controlled spinal movement without forcing range"
+						},
+						{
+							"id": "d3-warmup-glutebridge",
+							"name": "Glute Bridge",
+							"sets": "2",
+							"reps": "15",
+							"target": [
+								"glutes",
+								"posterior chain"
+							],
+							"notes": "Squeeze glutes, ribs down, no lower-back arch"
+						},
+						{
+							"id": "d3-warmup-birddog",
+							"name": "Bird Dog",
+							"sets": "2",
+							"reps": "10 per side",
+							"target": [
+								"core stability"
+							],
+							"notes": "Slow movement, resist rotation, hips square"
+						}
+					]
+				},
+				{
+					"type": "mobility",
+					"title": "Hip & Spine Mobility Flow",
+					"duration": "8–10 min",
+					"exercises": [
+						{
+							"id": "d3-mobility-wgs",
+							"name": "World’s Greatest Stretch",
+							"sets": "1",
+							"reps": "5 per side",
+							"target": [
+								"hips",
+								"thoracic spine"
+							],
+							"notes": "Pause and breathe at end ranges"
+						},
+						{
+							"id": "d3-mobility-9090",
+							"name": "90/90 Hip Rotations",
+							"sets": "1",
+							"reps": "8–10",
+							"target": [
+								"hip internal rotation"
+							],
+							"notes": "Sit tall, rotate under control"
+						},
+						{
+							"id": "d3-mobility-openbook",
+							"name": "Thoracic Open Book Rotations",
+							"sets": "1",
+							"reps": "8 per side",
+							"target": [
+								"thoracic spine"
+							],
+							"notes": "Knees stacked, rotate upper back only"
+						},
+						{
+							"id": "d3-mobility-ankle",
+							"name": "Ankle Dorsiflexion Drill",
+							"sets": "1",
+							"reps": "10 per side",
+							"target": [
+								"ankles"
+							],
+							"notes": "Heel stays down, knee tracks forward"
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Zone 2 Aerobic Conditioning",
+					"duration": "35–45 min",
+					"exercises": [
+						{
+							"id": "d3-main-treadmill",
+							"name": "Treadmill Incline Walk / Easy Jog",
+							"sets": "1",
+							"duration": "35–45 min",
+							"intensity": "Zone 2",
+							"target": [
+								"cardiovascular system",
+								"fat metabolism"
+							],
+							"notes": "Conversational pace, nasal or nasal+mouth breathing, no hand support"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cool Down & Recovery",
+					"duration": "8–12 min",
+					"exercises": [
+						{
+							"id": "d3-cooldown-childspose",
+							"name": "Child’s Pose",
+							"sets": "1",
+							"duration": "60–90 sec",
+							"target": [
+								"spine decompression"
+							],
+							"notes": "Slow breathing, relax lower back"
+						},
+						{
+							"id": "d3-cooldown-hipflexor",
+							"name": "Kneeling Hip Flexor Stretch",
+							"sets": "1",
+							"duration": "45 sec per side",
+							"target": [
+								"hip flexors"
+							],
+							"notes": "Glute squeeze, torso upright"
+						},
+						{
+							"id": "d3-cooldown-hamstring",
+							"name": "Seated Hamstring Stretch",
+							"sets": "1",
+							"duration": "45 sec per side",
+							"target": [
+								"hamstrings"
+							],
+							"notes": "Hinge forward, no spinal rounding"
+						},
+						{
+							"id": "d3-cooldown-spinaltwist",
+							"name": "Supine Spinal Twist",
+							"sets": "1",
+							"duration": "45 sec per side",
+							"target": [
+								"lumbar spine",
+								"recovery"
+							],
+							"notes": "Arms wide, breathe slowly"
+						}
+					]
+				}
+			]
+		},
+		"full-body-athletic-power": {
+			"id": "full-body-athletic-power",
+			"icon": "⚡",
+			"title": "Full Body Athletic Power",
+			"duration": "65–75 min",
+			"description": "Athletic power session combining lower-body strength, upper-body power, carries, and anti-rotation core work while protecting the spine",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Reset & Activation",
+					"duration": "6–8 min",
+					"exercises": [
+						{
+							"id": "d4-warmup-breathing",
+							"name": "Diaphragmatic Breathing",
+							"sets": "1",
+							"reps": "5 slow breaths",
+							"target": [
+								"nervous system",
+								"core"
+							],
+							"notes": "Inhale through nose, expand belly, ribs down, relax neck and shoulders"
+						},
+						{
+							"id": "d4-warmup-catcow",
+							"name": "Cat–Cow",
+							"sets": "1",
+							"reps": "10–12",
+							"target": [
+								"spine mobility"
+							],
+							"notes": "Slow, smooth spinal movement, no forcing range"
+						},
+						{
+							"id": "d4-warmup-glutebridge",
+							"name": "Glute Bridge",
+							"sets": "2",
+							"reps": "15",
+							"target": [
+								"glutes",
+								"posterior chain"
+							],
+							"notes": "Squeeze glutes, ribs down, avoid lower-back arch"
+						},
+						{
+							"id": "d4-warmup-birddog",
+							"name": "Bird Dog",
+							"sets": "2",
+							"reps": "8 per side",
+							"target": [
+								"core stability"
+							],
+							"notes": "Slow tempo, hips square, resist rotation"
+						}
+					]
+				},
+				{
+					"type": "mobility",
+					"title": "Hip & Thoracic Mobility",
+					"duration": "6–8 min",
+					"exercises": [
+						{
+							"id": "d4-mobility-wgs",
+							"name": "World’s Greatest Stretch",
+							"sets": "1",
+							"reps": "5 per side",
+							"target": [
+								"hips",
+								"thoracic spine"
+							],
+							"notes": "Pause at end ranges and breathe"
+						},
+						{
+							"id": "d4-mobility-9090",
+							"name": "90/90 Hip Rotations",
+							"sets": "1",
+							"reps": "8–10",
+							"target": [
+								"hip internal rotation"
+							],
+							"notes": "Sit tall, rotate under control"
+						},
+						{
+							"id": "d4-mobility-openbook",
+							"name": "Thoracic Open Book Rotations",
+							"sets": "1",
+							"reps": "8 per side",
+							"target": [
+								"thoracic spine"
+							],
+							"notes": "Knees stacked, rotate upper back only"
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Strength & Power",
+					"duration": "35–40 min",
+					"exercises": [
+						{
+							"id": "d4-main-trapbar",
+							"name": "Trap Bar Deadlift / Machine Hip Hinge",
+							"sets": "4",
+							"reps": "5",
+							"rest": "120 sec",
+							"target": [
+								"glutes",
+								"hamstrings",
+								"core"
+							],
+							"notes": "Moderate load, brace core, push the floor away, no grinding reps"
+						},
+						{
+							"id": "d4-main-pushpress",
+							"name": "Push Press / Machine Shoulder Press",
+							"sets": "3",
+							"reps": "5",
+							"rest": "90 sec",
+							"target": [
+								"shoulders",
+								"triceps",
+								"power"
+							],
+							"notes": "Small dip, explosive drive, control the lowering phase"
+						},
+						{
+							"id": "d4-main-kbswing",
+							"name": "Kettlebell Swing",
+							"sets": "3",
+							"reps": "15",
+							"rest": "75 sec",
+							"target": [
+								"hips",
+								"posterior chain",
+								"power"
+							],
+							"notes": "Hip snap, neutral spine, arms relaxed"
+						},
+						{
+							"id": "d4-main-farmercarry",
+							"name": "Farmer Carry (Dumbbells)",
+							"sets": "4",
+							"reps": "40 meters",
+							"rest": "60 sec",
+							"target": [
+								"core",
+								"grip",
+								"posture"
+							],
+							"notes": "Tall posture, slow controlled steps, no leaning"
+						},
+						{
+							"id": "d4-main-sideplank",
+							"name": "Side Plank",
+							"sets": "3",
+							"reps": "30–40 sec per side",
+							"target": [
+								"core stability",
+								"obliques"
+							],
+							"notes": "Straight line from head to heels, breathe steadily"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cool Down & Recovery",
+					"duration": "8–10 min",
+					"exercises": [
+						{
+							"id": "d4-cooldown-childspose",
+							"name": "Child’s Pose",
+							"sets": "1",
+							"duration": "60–90 sec",
+							"target": [
+								"spine decompression"
+							],
+							"notes": "Slow breathing, relax lower back"
+						},
+						{
+							"id": "d4-cooldown-hipflexor",
+							"name": "Kneeling Hip Flexor Stretch",
+							"sets": "1",
+							"duration": "45 sec per side",
+							"target": [
+								"hip flexors"
+							],
+							"notes": "Glute squeeze, torso upright"
+						},
+						{
+							"id": "d4-cooldown-spinaltwist",
+							"name": "Supine Spinal Twist",
+							"sets": "1",
+							"duration": "45 sec per side",
+							"target": [
+								"lumbar spine",
+								"recovery"
+							],
+							"notes": "Arms wide, breathe slowly"
+						}
+					]
+				}
+			]
+		},
+		"hiit-speed-indoor": {
+			"id": "hiit-speed-indoor",
+			"icon": "🔥",
+			"title": "HIIT & Speed (Indoor)",
+			"duration": "45–55 min",
+			"description": "Short, high-quality indoor HIIT session designed to improve sprint capacity, cardiovascular fitness, and athleticism without excessive fatigue or spinal stress",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "General Warm-Up",
+					"duration": "8–10 min",
+					"exercises": [
+						{
+							"id": "d5-warmup-breathing",
+							"name": "Diaphragmatic Breathing",
+							"sets": "1",
+							"reps": "5 slow breaths",
+							"target": [
+								"nervous system",
+								"core"
+							],
+							"notes": "Inhale through nose, expand belly, ribs down, relax neck and shoulders"
+						},
+						{
+							"id": "d5-warmup-catcow",
+							"name": "Cat–Cow",
+							"sets": "1",
+							"reps": "10–12",
+							"target": [
+								"spine mobility"
+							],
+							"notes": "Smooth spinal movement, no forcing end ranges"
+						},
+						{
+							"id": "d5-warmup-glutebridge",
+							"name": "Glute Bridge",
+							"sets": "2",
+							"reps": "15",
+							"target": [
+								"glutes",
+								"posterior chain"
+							],
+							"notes": "Squeeze glutes, ribs down, avoid lower-back arch"
+						},
+						{
+							"id": "d5-warmup-highknees",
+							"name": "Marching High Knees",
+							"sets": "2",
+							"reps": "30 sec",
+							"target": [
+								"hip flexors",
+								"coordination"
+							],
+							"notes": "Tall posture, controlled rhythm"
+						}
+					]
+				},
+				{
+					"type": "mobility",
+					"title": "Sprint Mobility & Mechanics",
+					"duration": "8–10 min",
+					"exercises": [
+						{
+							"id": "d5-mobility-wgs",
+							"name": "World’s Greatest Stretch",
+							"sets": "1",
+							"reps": "5 per side",
+							"target": [
+								"hips",
+								"thoracic spine"
+							],
+							"notes": "Pause at end range and breathe"
+						},
+						{
+							"id": "d5-mobility-9090",
+							"name": "90/90 Hip Rotations",
+							"sets": "1",
+							"reps": "8–10",
+							"target": [
+								"hip internal rotation"
+							],
+							"notes": "Sit tall, slow controlled rotations"
+						},
+						{
+							"id": "d5-mobility-ankle",
+							"name": "Ankle Dorsiflexion Rocks",
+							"sets": "1",
+							"reps": "10 per side",
+							"target": [
+								"ankles"
+							],
+							"notes": "Heel stays down, knee tracks forward"
+						},
+						{
+							"id": "d5-mobility-askips",
+							"name": "A-Skips (Slow)",
+							"sets": "2",
+							"reps": "20 sec",
+							"target": [
+								"running mechanics"
+							],
+							"notes": "Light, rhythmic, focus on coordination"
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "HIIT / Speed Work",
+					"duration": "15–20 min",
+					"exercises": [
+						{
+							"id": "d5-main-treadmill",
+							"name": "Treadmill Sprints",
+							"sets": "6–8",
+							"reps": "20–30 sec sprint",
+							"rest": "90 sec walk",
+							"target": [
+								"speed",
+								"VO₂ max",
+								"conditioning"
+							],
+							"notes": "1–2% incline, 85–90% effort, stop if speed drops"
+						},
+						{
+							"id": "d5-main-bike",
+							"name": "Stationary Bike Sprints (Optional)",
+							"sets": "8–10",
+							"reps": "30 sec hard",
+							"rest": "90 sec easy",
+							"target": [
+								"cardio",
+								"power"
+							],
+							"notes": "Back-friendly alternative if legs or spine feel fatigued"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cool Down & Recovery",
+					"duration": "8–10 min",
+					"exercises": [
+						{
+							"id": "d5-cooldown-walk",
+							"name": "Slow Treadmill Walk",
+							"sets": "1",
+							"duration": "3 min",
+							"target": [
+								"heart rate recovery"
+							],
+							"notes": "Nasal breathing, gradually slow pace"
+						},
+						{
+							"id": "d5-cooldown-hipflexor",
+							"name": "Kneeling Hip Flexor Stretch",
+							"sets": "1",
+							"duration": "45 sec per side",
+							"target": [
+								"hip flexors"
+							],
+							"notes": "Glute squeeze, upright torso"
+						},
+						{
+							"id": "d5-cooldown-childspose",
+							"name": "Child’s Pose",
+							"sets": "1",
+							"duration": "60–90 sec",
+							"target": [
+								"spine decompression"
+							],
+							"notes": "Slow breathing, relax lower back"
+						},
+						{
+							"id": "d5-cooldown-spinaltwist",
+							"name": "Supine Spinal Twist",
+							"sets": "1",
+							"duration": "45 sec per side",
+							"target": [
+								"lumbar spine",
+								"recovery"
+							],
+							"notes": "Arms wide, breathe slowly"
+						}
+					]
+				}
+			]
+		},
+		"active-recovery-aerobic": {
+			"id": "active-recovery-aerobic",
+			"icon": "🟢",
+			"title": "Active Recovery + Aerobic Capacity",
+			"duration": "50–65 min",
+			"description": "Low-intensity indoor aerobic session combined with structured mobility and recovery to improve endurance, joint health and nervous system recovery",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Reset & Activation",
+					"duration": "10–12 min",
+					"exercises": [
+						{
+							"id": "d6-warmup-breathing",
+							"name": "Diaphragmatic Breathing",
+							"sets": "1",
+							"reps": "5 slow breaths",
+							"target": [
+								"nervous system",
+								"core"
+							],
+							"notes": "Nasal inhale, belly expansion, long exhale"
+						},
+						{
+							"id": "d6-warmup-catcow",
+							"name": "Cat–Cow",
+							"sets": "1",
+							"reps": "10–12",
+							"target": [
+								"spine mobility"
+							],
+							"notes": "Smooth spinal movement, no forcing"
+						},
+						{
+							"id": "d6-warmup-glutebridge",
+							"name": "Glute Bridge",
+							"sets": "2",
+							"reps": "15",
+							"target": [
+								"glutes",
+								"posterior chain"
+							],
+							"notes": "Ribs down, glute squeeze"
+						},
+						{
+							"id": "d6-warmup-birddog",
+							"name": "Bird Dog",
+							"sets": "2",
+							"reps": "10 per side",
+							"target": [
+								"core stability"
+							],
+							"notes": "No hip rotation, slow control"
+						}
+					]
+				},
+				{
+					"type": "mobility",
+					"title": "Full Body Mobility Flow",
+					"duration": "12–15 min",
+					"exercises": [
+						{
+							"id": "d6-mobility-wgs",
+							"name": "World’s Greatest Stretch",
+							"sets": "1",
+							"reps": "5 per side",
+							"target": [
+								"hips",
+								"thoracic spine"
+							],
+							"notes": "Pause and breathe at end range"
+						},
+						{
+							"id": "d6-mobility-9090",
+							"name": "90/90 Hip Rotations",
+							"sets": "1",
+							"reps": "8–10",
+							"target": [
+								"hip internal rotation"
+							],
+							"notes": "Sit tall, slow controlled reps"
+						},
+						{
+							"id": "d6-mobility-openbook",
+							"name": "Thoracic Open Books",
+							"sets": "1",
+							"reps": "8 per side",
+							"target": [
+								"upper spine"
+							],
+							"notes": "Knees stacked, rotate upper back"
+						},
+						{
+							"id": "d6-mobility-ankle",
+							"name": "Ankle Dorsiflexion Rocks",
+							"sets": "1",
+							"reps": "10 per side",
+							"target": [
+								"ankles"
+							],
+							"notes": "Heel stays down"
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Zone 2 Aerobic Conditioning",
+					"duration": "25–35 min",
+					"exercises": [
+						{
+							"id": "d6-main-treadmill",
+							"name": "Incline Treadmill Walk",
+							"sets": "1",
+							"duration": "25–35 min",
+							"target": [
+								"aerobic base",
+								"fat oxidation"
+							],
+							"notes": "Conversational pace, nasal breathing"
+						},
+						{
+							"id": "d6-main-bike",
+							"name": "Stationary Bike (Optional)",
+							"sets": "1",
+							"duration": "30–40 min",
+							"target": [
+								"endurance",
+								"recovery"
+							],
+							"notes": "Back-friendly alternative"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cool Down & Decompression",
+					"duration": "10–12 min",
+					"exercises": [
+						{
+							"id": "d6-cooldown-walk",
+							"name": "Slow Treadmill Walk",
+							"sets": "1",
+							"duration": "3–5 min",
+							"target": [
+								"heart rate recovery"
+							],
+							"notes": "Gradually slow pace"
+						},
+						{
+							"id": "d6-cooldown-hipflexor",
+							"name": "Kneeling Hip Flexor Stretch",
+							"sets": "1",
+							"duration": "45 sec per side",
+							"target": [
+								"hip flexors"
+							],
+							"notes": "Glute squeeze, upright torso"
+						},
+						{
+							"id": "d6-cooldown-childspose",
+							"name": "Child’s Pose",
+							"sets": "1",
+							"duration": "60–90 sec",
+							"target": [
+								"spine decompression"
+							],
+							"notes": "Relax lower back"
+						},
+						{
+							"id": "d6-cooldown-spinaltwist",
+							"name": "Supine Spinal Twist",
+							"sets": "1",
+							"duration": "45 sec per side",
+							"target": [
+								"lumbar spine",
+								"recovery"
+							],
+							"notes": "Slow nasal breathing"
+						}
+					]
+				}
+			]
+		}
+	},
+	"nutrition": {
+		"dailyTargets": {
+		"calories": {
+			"trainingDay": {
+			"target": "2400–2500 kcal",
+			"note": "Near maintenance to support strength and recovery"
+			},
+			"restDay": {
+			"target": "2100–2200 kcal",
+			"note": "Moderate deficit for fat loss"
+			},
+			"weeklyAverageDeficit": "≈300 kcal/day"
+		},
+
+		"protein": {
+			"target": "130–150 g",
+			"perKg": "1.8–2.0 g/kg",
+			"note": "Essential for muscle retention and recovery at 35+"
+		},
+
+		"carbohydrates": {
+			"target": "280–330 g",
+			"percentage": "40–45%",
+			"note": "Primary fuel for hybrid training and performance"
+		},
+
+		"fats": {
+			"target": "65–80 g",
+			"percentage": "25–30%",
+			"note": "Supports hormones and joint health"
+		},
+
+		"water": {
+			"base": "3 L",
+			"trainingDay": "3.5 L",
+			"note": "Increase intake post-workout and in warm climate"
+		},
+
+		"sleep": {
+			"target": "7.5–8.5 hours",
+			"note": "Critical for fat loss, testosterone, and recovery"
+		},
+
+		"dailySteps": {
+			"target": "7,000–9,000",
+			"note": "Maintain outside gym without compromising recovery"
+		}
+		},
+
+		"macroSplit": {
+		"protein": {
+			"percentage": "25–30%",
+			"priority": "High"
+		},
+		"carbs": {
+			"percentage": "40–45%",
+			"priority": "High"
+		},
+		"fats": {
+			"percentage": "25–30%",
+			"priority": "Moderate"
+		}
+		},
+
+		"mealTiming": {
+		"preWorkout": {
+			"timing": "30–45 min before training",
+			"guideline": "Light carbs if needed (fruit, dates), optional black coffee"
+		},
+		"postWorkout": {
+			"timing": "Within 60 minutes",
+			"guideline": "30–40 g protein + carbs for recovery"
+		},
+		"dailyDistribution": {
+			"proteinPerMeal": "30–35 g",
+			"mealsPerDay": "4–5",
+			"note": "Even distribution improves muscle protein synthesis"
+		}
+		},
+
+		"foodQualityGuidelines": [
+		{
+			"id": "protein-sources",
+			"title": "High-Quality Vegetarian Proteins",
+			"items": [
+			"Whey isolate",
+			"Paneer (low-fat if cutting)",
+			"Tofu / soy chunks",
+			"Greek yogurt / curd",
+			"Dal + rice combinations"
+			]
+		},
+		{
+			"id": "carb-sources",
+			"title": "Performance Carbohydrates",
+			"items": [
+			"Oats",
+			"Rice",
+			"Millets",
+			"Fruits",
+			"Vegetables"
+			]
+		},
+		{
+			"id": "fat-sources",
+			"title": "Healthy Fats",
+			"items": [
+			"Nuts & seeds",
+			"Olive oil",
+			"Ghee (small amounts)",
+			"Avocado"
+			]
+		}
+		],
+
+		"supplements": [
+		{
+			"name": "Whey Protein Isolate",
+			"dose": "1 scoop post-workout",
+			"purpose": "Meet daily protein target"
+		},
+		{
+			"name": "Creatine Monohydrate",
+			"dose": "5 g daily",
+			"purpose": "Strength, power, muscle fullness"
+		},
+		{
+			"name": "Omega-3",
+			"dose": "1–2 g daily",
+			"purpose": "Joint, heart, inflammation support"
+		},
+		{
+			"name": "Vitamin D3",
+			"dose": "As per blood levels",
+			"purpose": "Hormonal and bone health"
+		}
+		],
+
+		"rules": [
+		"Do not cut carbs aggressively — performance matters",
+		"Protein is non-negotiable daily",
+		"Hydration and sleep are part of nutrition",
+		"Adjust calories based on weekly trend, not daily weight"
+		]
+	}
+}
