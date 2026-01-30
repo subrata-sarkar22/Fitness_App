@@ -235,25 +235,24 @@ document.addEventListener("DOMContentLoaded", () => {
 ================================ */
 
 function updateWorkoutProgress(workoutType) {
-  const checkboxes = document.querySelectorAll(`[data-progress^="${workoutType}-"]`);
+  const checkboxes = document.querySelectorAll(`[data-workout="${workoutType}"]`);
   const completed = [...checkboxes].filter(cb => cb.checked).length;
   const total = checkboxes.length;
   const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
 
-  const ring = document.getElementById(`${workoutType}-progress-ring`);
-  const text = document.getElementById(`${workoutType}-progress-text`);
-
-  if (ring && text) {
+  const workoutRing = document.getElementById('workout-progress-ring');
+  const workoutText = document.getElementById('workout-progress-text');
+  
+  if (workoutRing && workoutText) {
     const radius = 25;
     const circumference = 2 * Math.PI * radius;
-
-    ring.style.strokeDasharray = circumference;
-    ring.style.strokeDashoffset = circumference - (percent / 100) * circumference;
-
-    text.textContent = `${percent}%`;
+    
+    workoutRing.style.strokeDasharray = circumference;
+    workoutRing.style.strokeDashoffset = circumference - (percent / 100) * circumference;
+    
+    workoutText.textContent = `${percent}%`;
   }
 
-  // Update main progress when individual workout progress changes
   updateProgress();
 }
 
@@ -409,7 +408,7 @@ function generateExerciseHTML(exercise, workoutType) {
     <div class="exercise-item">
       <div class="exercise-header">
         <h3>${exercise.name}</h3>
-        <input type="checkbox" data-progress="${exercise.id}" onchange="updateWorkoutProgress('${workoutType}')">
+        <input type="checkbox" data-progress="${exercise.id}" data-workout="${workoutType}">
       </div>
       <div class="exercise-details">
         ${badge}

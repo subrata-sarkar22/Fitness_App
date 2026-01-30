@@ -50,7 +50,7 @@
 		},
 		{
 			"id": "hiit-speed-indoor",
-			"title": "HIIT & Speed (Indoor)",
+			"title": "HIIT & Speed",
 			"description": "Indoor hybrid HIIT session focused on speed, VO₂ max, athletic conditioning, and hormonal response while protecting joints and lower back",
 			"duration": "45–55 min",
 			"image": "assets/images/hiit-speed.jpg"
@@ -834,7 +834,7 @@
 		"hiit-speed-indoor": {
 			"id": "hiit-speed-indoor",
 			"icon": "🔥",
-			"title": "HIIT & Speed (Indoor)",
+			"title": "HIIT & Speed",
 			"duration": "45–55 min",
 			"description": "Short, high-quality indoor HIIT session designed to improve sprint capacity, cardiovascular fitness, and athleticism without excessive fatigue or spinal stress",
 			"segments": [

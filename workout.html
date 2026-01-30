@@ -17,7 +17,7 @@
     </svg>
   </a>
   <h1 id="workout-title">Workout</h1>
-  <p id="workout-subtitle">Loading...</p>
+  <p id="workout-subtitle"></p>
 </header>
 
 <div class="container">
@@ -30,8 +30,8 @@
       </svg>
       <div class="progress-text" id="workout-progress-text">0%</div>
     </div>
-    <h2 id="hero-title">Loading...</h2>
-    <p id="hero-desc">Please wait</p>
+    <p id="hero-desc" style="font-size: 1rem; margin: 0 0 4px;">Loading...</p>
+    <p id="hero-duration" style="font-size: 0.85rem; margin: 0;">Please wait</p>
   </div>
 
 </div>
@@ -104,9 +104,8 @@ function initWorkoutPage() {
   
   // Update header
   document.getElementById('workout-title').textContent = workout.title;
-  document.getElementById('workout-subtitle').textContent = `${workout.description} • ${workout.duration}`;
-  document.getElementById('hero-title').textContent = workout.title;
   document.getElementById('hero-desc').textContent = workout.description;
+  document.getElementById('hero-duration').textContent = workout.duration;
   
   // Set hero background
   const backgrounds = {
@@ -131,7 +130,7 @@ function initWorkoutPage() {
         sectionsHTML += `<p style="margin-bottom: 16px; color: var(--muted);"><small>${segment.duration}</small></p>`;
       }
       segment.exercises.forEach(exercise => {
-        sectionsHTML += generateExerciseHTML(exercise, workoutId.split('-')[0]);
+        sectionsHTML += generateExerciseHTML(exercise, workoutId);
       });
       sectionsHTML += '</div>';
     });
@@ -160,7 +159,7 @@ function initWorkoutPage() {
         sectionsHTML += '<p style="margin-bottom: 16px;"><small>Complete 2-3 rounds • Rest 60-90 sec between rounds</small></p>';
       }
       exercisesByType[type].forEach(exercise => {
-        sectionsHTML += generateExerciseHTML(exercise, workoutId.split('-')[0]);
+        sectionsHTML += generateExerciseHTML(exercise, workoutId);
       });
       sectionsHTML += '</div>';
     });
@@ -176,6 +175,28 @@ function initWorkoutPage() {
     </div>`;
   
   hero.insertAdjacentHTML('afterend', sectionsHTML);
+  
+  // Initialize checkboxes with saved state
+  document.querySelectorAll('[data-progress]').forEach(box => {
+    const key = box.dataset.progress;
+    const workoutType = box.dataset.workout;
+    box.checked = loadProgress(key);
+    
+    box.addEventListener('change', () => {
+      saveProgress(key, box.checked);
+      box.closest('.exercise-item')?.classList.toggle('done', box.checked);
+      if (workoutType) {
+        updateWorkoutProgress(workoutType);
+      }
+    });
+    
+    if (box.checked) {
+      box.closest('.exercise-item')?.classList.add('done');
+    }
+  });
+  
+  // Initialize progress on page load
+  setTimeout(() => updateWorkoutProgress(workoutId), 100);
 }
 
 // Auto-initialize when data is ready
