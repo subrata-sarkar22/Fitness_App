@@ -1,0 +1,839 @@
+{
+	"user": {
+		"name": "Priyanshu",
+		"age": "22",
+		"weight": "92",
+		"weightUnit": "kg",
+		"height": "5'5\"",
+		"heightCm": "165 cm",
+		"goal": "Weight loss and muscle gain (body recomposition)",
+		"level": "intermediate",
+		"trainingTime": "evening"
+	},
+	"weeklySchedule": {
+		"1": "day1-chest",
+		"2": "day2-back",
+		"3": "day3-legs",
+		"4": "day4-shoulders",
+		"5": "day5-arms",
+		"6": "rest",
+		"0": "rest"
+	},
+	"workoutLibrary": [
+		{
+			"id": "day1-chest",
+			"title": "Day 1 – Chest + Cardio",
+			"description": "Chest training with cardio for fat loss",
+			"duration": "70–80 min",
+			"image": "assets/images/chest.jpg"
+		},
+		{
+			"id": "day2-back",
+			"title": "Day 2 – Back + Cardio",
+			"description": "Back training with cardio conditioning",
+			"duration": "70–80 min",
+			"image": "assets/images/back.jpg"
+		},
+		{
+			"id": "day3-legs",
+			"title": "Day 3 – Legs + Cardio",
+			"description": "Lower body strength with cardio",
+			"duration": "75–85 min",
+			"image": "assets/images/lower.jpg"
+		},
+		{
+			"id": "day4-shoulders",
+			"title": "Day 4 – Shoulders + Cardio",
+			"description": "Shoulder development with cardio",
+			"duration": "70–80 min",
+			"image": "assets/images/shoulders.jpg"
+		},
+		{
+			"id": "day5-arms",
+			"title": "Day 5 – Arms + Cardio",
+			"description": "Biceps and triceps with cardio finish",
+			"duration": "65–75 min",
+			"image": "assets/images/arms.jpg"
+		}
+	],
+	"workouts": {
+		"day1-chest": {
+			"id": "day1-chest",
+			"icon": "🏋️",
+			"title": "Day 1 – Chest + Cardio",
+			"duration": "70–80 min",
+			"description": "Chest training with cardio for fat loss",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Warmup",
+					"duration": "6–8 min",
+					"exercises": [
+						{
+							"id": "d1-walk",
+							"name": "Easy Walk",
+							"sets": "1",
+							"duration": "3–4 min",
+							"target": ["warmup"]
+						},
+						{
+							"id": "d1-arm-circles",
+							"name": "Arm Circles",
+							"sets": "1",
+							"reps": "20",
+							"target": ["shoulders"]
+						},
+						{
+							"id": "d1-pushups",
+							"name": "Light Push-ups",
+							"sets": "1",
+							"reps": "10",
+							"target": ["chest"]
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Chest Training",
+					"duration": "45–50 min",
+					"exercises": [
+						{
+							"id": "d1-barbell-bench",
+							"name": "Barbell Bench Press",
+							"sets": "4",
+							"reps": "6-8",
+							"rest": "90 sec",
+							"target": ["chest", "triceps"],
+							"youtube": "https://youtube.com/shorts/W_m70K0fecc?feature=share"
+						},
+						{
+							"id": "d1-incline-db",
+							"name": "Incline Dumbbell Press",
+							"sets": "3",
+							"reps": "8-10",
+							"rest": "75 sec",
+							"target": ["upper chest"],
+							"youtube": "https://youtube.com/shorts/JAoHrwhWJZs?feature=share"
+						},
+						{
+							"id": "d1-machine-press",
+							"name": "Machine Chest Press",
+							"sets": "3",
+							"reps": "10",
+							"rest": "60 sec",
+							"target": ["chest"],
+							"youtube": "https://youtube.com/shorts/zhRvYnR7QzM?feature=share"
+						},
+						{
+							"id": "d1-cable-fly",
+							"name": "Cable Chest Fly",
+							"sets": "3",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["chest"],
+							"youtube": "https://youtube.com/shorts/88U80_sWD5k?feature=share"
+						},
+						{
+							"id": "d1-pec-fly",
+							"name": "Chest Fly Machine",
+							"sets": "3",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["chest"],
+							"youtube": "https://youtube.com/shorts/ocXaM_qmjKM?feature=share"
+						},
+						{
+							"id": "d1-dips",
+							"name": "Dips (Chest Focus)",
+							"sets": "2",
+							"reps": "max",
+							"rest": "60 sec",
+							"target": ["chest", "triceps"],
+							"youtube": "https://youtube.com/shorts/njkpUPJRzJQ?feature=share"
+						}
+					]
+				},
+				{
+					"type": "conditioning",
+					"title": "Cardio",
+					"duration": "12–15 min",
+					"exercises": [
+						{
+							"id": "d1-cardio",
+							"name": "Incline Treadmill Walk",
+							"sets": "1",
+							"duration": "12-15 min",
+							"target": ["cardio"],
+							"notes": "Moderate pace, steady state",
+							"youtube": "https://www.youtube.com/watch?v=ml6cT4AZdqI"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cooldown",
+					"duration": "5 min",
+					"exercises": [
+						{
+							"id": "d1-stretch",
+							"name": "Chest & Shoulder Stretch",
+							"sets": "1",
+							"duration": "5 min",
+							"target": ["recovery"]
+						}
+					]
+				}
+			]
+		},
+
+		"day2-back": {
+			"id": "day2-back",
+			"icon": "💪",
+			"title": "Day 2 – Back + Cardio",
+			"duration": "70–80 min",
+			"description": "Back training with cardio conditioning",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Warmup",
+					"duration": "6–8 min",
+					"exercises": [
+						{
+							"id": "d2-walk",
+							"name": "Easy Walk",
+							"sets": "1",
+							"duration": "3–4 min",
+							"target": ["warmup"]
+						},
+						{
+							"id": "d2-band-row",
+							"name": "Light Band Row",
+							"sets": "1",
+							"reps": "15",
+							"target": ["back"]
+						},
+						{
+							"id": "d2-scapular",
+							"name": "Scapular Pull-ups",
+							"sets": "1",
+							"reps": "10",
+							"target": ["back"]
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Back Training",
+					"duration": "45–50 min",
+					"exercises": [
+						{
+							"id": "d2-lat-pulldown",
+							"name": "Lat Pulldown",
+							"sets": "4",
+							"reps": "8-10",
+							"rest": "75 sec",
+							"target": ["lats"],
+							"youtube": "https://youtube.com/shorts/sojAoHZLxVM?feature=share"
+						},
+						{
+							"id": "d2-pullups",
+							"name": "Pull Ups",
+							"sets": "3",
+							"reps": "max",
+							"rest": "90 sec",
+							"target": ["lats", "back"],
+							"youtube": "https://youtube.com/shorts/_ustQzj-vWg?feature=share"
+						},
+						{
+							"id": "d2-cable-row",
+							"name": "Seated Cable Row",
+							"sets": "3",
+							"reps": "10",
+							"rest": "75 sec",
+							"target": ["mid back"],
+							"youtube": "https://youtube.com/shorts/dL3fk2JSa3c?feature=share"
+						},
+						{
+							"id": "d2-db-row",
+							"name": "Chest Supported DB Row",
+							"sets": "3",
+							"reps": "10",
+							"rest": "75 sec",
+							"target": ["back"],
+							"youtube": "https://youtube.com/shorts/l36HimcyRd0?feature=share"
+						},
+						{
+							"id": "d2-straight-bar",
+							"name": "Straight Bar Cable Row",
+							"sets": "3",
+							"reps": "10",
+							"rest": "60 sec",
+							"target": ["back"],
+							"youtube": "https://youtube.com/shorts/iUFJnElb4gA?feature=share"
+						},
+						{
+							"id": "d2-hyperextension",
+							"name": "Hyperextension",
+							"sets": "2",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["lower back"],
+							"youtube": "https://youtube.com/shorts/fu4_HULq7Ww?feature=share"
+						}
+					]
+				},
+				{
+					"type": "conditioning",
+					"title": "Cardio",
+					"duration": "12–15 min",
+					"exercises": [
+						{
+							"id": "d2-cardio",
+							"name": "Stationary Bike",
+							"sets": "1",
+							"duration": "12-15 min",
+							"target": ["cardio"],
+							"notes": "Moderate intensity",
+							"youtube": "https://www.youtube.com/watch?v=1VYlOKUdylM"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cooldown",
+					"duration": "5 min",
+					"exercises": [
+						{
+							"id": "d2-stretch",
+							"name": "Back & Lat Stretch",
+							"sets": "1",
+							"duration": "5 min",
+							"target": ["recovery"]
+						}
+					]
+				}
+			]
+		},
+
+		"day3-legs": {
+			"id": "day3-legs",
+			"icon": "🦵",
+			"title": "Day 3 – Legs + Cardio",
+			"duration": "75–85 min",
+			"description": "Lower body strength with cardio",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Warmup",
+					"duration": "8–10 min",
+					"exercises": [
+						{
+							"id": "d3-walk",
+							"name": "Easy Walk",
+							"sets": "1",
+							"duration": "3–4 min",
+							"target": ["warmup"]
+						},
+						{
+							"id": "d3-leg-swings",
+							"name": "Leg Swings",
+							"sets": "1",
+							"reps": "10 each direction",
+							"target": ["hips"]
+						},
+						{
+							"id": "d3-bw-squat",
+							"name": "Bodyweight Squat",
+							"sets": "1",
+							"reps": "15",
+							"target": ["legs"]
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Leg Training",
+					"duration": "50–55 min",
+					"exercises": [
+						{
+							"id": "d3-barbell-squat",
+							"name": "Barbell Squat",
+							"sets": "4",
+							"reps": "6-8",
+							"rest": "2 min",
+							"target": ["quads", "glutes"],
+							"youtube": "https://youtube.com/shorts/xxqVXX8g6rY?feature=share"
+						},
+						{
+							"id": "d3-leg-press",
+							"name": "Leg Press",
+							"sets": "3",
+							"reps": "10",
+							"rest": "90 sec",
+							"target": ["quads", "glutes"],
+							"youtube": "https://youtube.com/shorts/seeNLbaqz4o?feature=share"
+						},
+						{
+							"id": "d3-split-squat",
+							"name": "Dumbbell Split Squat",
+							"sets": "3",
+							"reps": "8/leg",
+							"rest": "75 sec",
+							"target": ["quads", "glutes"],
+							"youtube": "https://youtube.com/shorts/q_ONaiiyK3c?feature=share"
+						},
+						{
+							"id": "d3-rdl",
+							"name": "Romanian Deadlift DB",
+							"sets": "3",
+							"reps": "10",
+							"rest": "75 sec",
+							"target": ["hamstrings", "glutes"],
+							"youtube": "https://youtube.com/shorts/1t4JK9KvHl0?feature=share"
+						},
+						{
+							"id": "d3-leg-extension",
+							"name": "Leg Extension",
+							"sets": "3",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["quads"],
+							"youtube": "https://youtube.com/shorts/VOxJCzwx63Y?feature=share"
+						},
+						{
+							"id": "d3-calf-raise",
+							"name": "Standing Calf Raise",
+							"sets": "4",
+							"reps": "15",
+							"rest": "45 sec",
+							"target": ["calves"],
+							"youtube": "https://youtube.com/shorts/V89daJ19zKE?feature=share"
+						}
+					]
+				},
+				{
+					"type": "conditioning",
+					"title": "Cardio",
+					"duration": "15 min",
+					"exercises": [
+						{
+							"id": "d3-cardio",
+							"name": "Incline Walk or Cycle",
+							"sets": "1",
+							"duration": "15 min",
+							"target": ["cardio"],
+							"notes": "Light intensity for recovery",
+							"youtube": "https://www.youtube.com/watch?v=ml6cT4AZdqI"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cooldown",
+					"duration": "5 min",
+					"exercises": [
+						{
+							"id": "d3-stretch",
+							"name": "Lower Body Stretch",
+							"sets": "1",
+							"duration": "5 min",
+							"target": ["recovery"]
+						}
+					]
+				}
+			]
+		},
+
+		"day4-shoulders": {
+			"id": "day4-shoulders",
+			"icon": "🏋️",
+			"title": "Day 4 – Shoulders + Cardio",
+			"duration": "70–80 min",
+			"description": "Shoulder development with cardio",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Warmup",
+					"duration": "6–8 min",
+					"exercises": [
+						{
+							"id": "d4-walk",
+							"name": "Easy Walk",
+							"sets": "1",
+							"duration": "3–4 min",
+							"target": ["warmup"]
+						},
+						{
+							"id": "d4-arm-circles",
+							"name": "Arm Circles",
+							"sets": "1",
+							"reps": "20",
+							"target": ["shoulders"]
+						},
+						{
+							"id": "d4-band-pull",
+							"name": "Band Pull-aparts",
+							"sets": "1",
+							"reps": "15",
+							"target": ["rear delts"]
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Shoulder Training",
+					"duration": "45–50 min",
+					"exercises": [
+						{
+							"id": "d4-shoulder-press",
+							"name": "Seated Shoulder Press",
+							"sets": "4",
+							"reps": "8",
+							"rest": "90 sec",
+							"target": ["shoulders"],
+							"youtube": "https://youtube.com/shorts/rST1ZZ4ol6g?feature=share"
+						},
+						{
+							"id": "d4-lateral-raise",
+							"name": "Standing Lateral Raise",
+							"sets": "3",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["side delts"],
+							"youtube": "https://youtube.com/shorts/fXgTsx6r1DA?feature=share"
+						},
+						{
+							"id": "d4-machine-lateral",
+							"name": "Machine Lateral Raise",
+							"sets": "3",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["side delts"],
+							"youtube": "https://youtube.com/shorts/UwR5JL7MBrE?feature=share"
+						},
+						{
+							"id": "d4-rear-delt",
+							"name": "Rear Delt Machine Fly",
+							"sets": "3",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["rear delts"],
+							"youtube": "https://youtube.com/shorts/qpMBXrSnvus?feature=share"
+						},
+						{
+							"id": "d4-face-pull",
+							"name": "Face Pull",
+							"sets": "3",
+							"reps": "15",
+							"rest": "60 sec",
+							"target": ["rear delts"],
+							"youtube": "https://youtube.com/shorts/xVQC-LIdyhc?feature=share"
+						},
+						{
+							"id": "d4-ohp",
+							"name": "Barbell Overhead Press",
+							"sets": "3",
+							"reps": "8",
+							"rest": "90 sec",
+							"target": ["shoulders"],
+							"youtube": "https://youtube.com/shorts/UDoMU9jOq4o?feature=share"
+						}
+					]
+				},
+				{
+					"type": "conditioning",
+					"title": "Cardio",
+					"duration": "12–15 min",
+					"exercises": [
+						{
+							"id": "d4-cardio",
+							"name": "Elliptical / Bike",
+							"sets": "1",
+							"duration": "12-15 min",
+							"target": ["cardio"],
+							"notes": "Moderate pace",
+							"youtube": "https://www.youtube.com/watch?v=1VYlOKUdylM"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cooldown",
+					"duration": "5 min",
+					"exercises": [
+						{
+							"id": "d4-stretch",
+							"name": "Shoulder Stretch",
+							"sets": "1",
+							"duration": "5 min",
+							"target": ["recovery"]
+						}
+					]
+				}
+			]
+		},
+
+		"day5-arms": {
+			"id": "day5-arms",
+			"icon": "💥",
+			"title": "Day 5 – Arms + Cardio",
+			"duration": "65–75 min",
+			"description": "Biceps and triceps with cardio finish",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Warmup",
+					"duration": "6–8 min",
+					"exercises": [
+						{
+							"id": "d5-walk",
+							"name": "Easy Walk",
+							"sets": "1",
+							"duration": "3–4 min",
+							"target": ["warmup"]
+						},
+						{
+							"id": "d5-arm-circles",
+							"name": "Arm Circles",
+							"sets": "1",
+							"reps": "20",
+							"target": ["shoulders"]
+						},
+						{
+							"id": "d5-light-curl",
+							"name": "Light Dumbbell Curl",
+							"sets": "1",
+							"reps": "12",
+							"target": ["biceps"]
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Arms Training",
+					"duration": "40–45 min",
+					"exercises": [
+						{
+							"id": "d5-ez-curl",
+							"name": "EZ Bar Curl",
+							"sets": "3",
+							"reps": "10",
+							"rest": "75 sec",
+							"target": ["biceps"],
+							"youtube": "https://youtube.com/shorts/jM66ODGuClY?feature=share"
+						},
+						{
+							"id": "d5-incline-curl",
+							"name": "Incline DB Curl",
+							"sets": "3",
+							"reps": "10",
+							"rest": "75 sec",
+							"target": ["biceps"],
+							"youtube": "https://youtube.com/shorts/mb9y8LUFrKE?feature=share"
+						},
+						{
+							"id": "d5-hammer-curl",
+							"name": "Hammer Curl",
+							"sets": "3",
+							"reps": "10",
+							"rest": "60 sec",
+							"target": ["biceps", "forearms"],
+							"youtube": "https://youtube.com/shorts/TfBn-TX8f_M?feature=share"
+						},
+						{
+							"id": "d5-rope-pushdown",
+							"name": "Rope Pushdown",
+							"sets": "3",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["triceps"],
+							"youtube": "https://youtube.com/shorts/wA14jKPnUog?feature=share"
+						},
+						{
+							"id": "d5-overhead-extension",
+							"name": "Overhead Rope Extension",
+							"sets": "3",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["triceps"],
+							"youtube": "https://youtube.com/shorts/7yvUULbmh_Q?feature=share"
+						},
+						{
+							"id": "d5-skullcrusher",
+							"name": "DB Skullcrusher",
+							"sets": "3",
+							"reps": "10",
+							"rest": "60 sec",
+							"target": ["triceps"],
+							"youtube": "https://youtube.com/shorts/JCJPkkNSmPg?feature=share"
+						}
+					]
+				},
+				{
+					"type": "conditioning",
+					"title": "Cardio",
+					"duration": "15–20 min",
+					"exercises": [
+						{
+							"id": "d5-cardio",
+							"name": "Jog / Brisk Walk",
+							"sets": "1",
+							"duration": "15-20 min",
+							"target": ["cardio"],
+							"notes": "Steady pace for fat burn",
+							"youtube": "https://www.youtube.com/watch?v=brFHyOtTwH4"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cooldown",
+					"duration": "5 min",
+					"exercises": [
+						{
+							"id": "d5-stretch",
+							"name": "Arm Stretch",
+							"sets": "1",
+							"duration": "5 min",
+							"target": ["recovery"]
+						}
+					]
+				}
+			]
+		}
+	},
+	"nutrition": {
+		"dailyTargets": {
+			"calories": {
+				"trainingDay": {
+					"target": "2200–2300 kcal",
+					"note": "Moderate deficit for fat loss while maintaining muscle"
+				},
+				"restDay": {
+					"target": "1900–2000 kcal",
+					"note": "Lower intake on rest days"
+				},
+				"weeklyAverageDeficit": "≈500 kcal/day"
+			},
+			"protein": {
+				"target": "165–185 g",
+				"perKg": "1.8–2.0 g/kg",
+				"note": "High protein for muscle preservation during cut"
+			},
+			"carbohydrates": {
+				"target": "200–220 g",
+				"percentage": "35–40%",
+				"note": "Moderate carbs for training performance"
+			},
+			"fats": {
+				"target": "60–70 g",
+				"percentage": "25–30%",
+				"note": "Essential for hormonal health"
+			},
+			"water": {
+				"base": "3 L",
+				"trainingDay": "3.5–4 L",
+				"note": "Increase during workouts"
+			},
+			"sleep": {
+				"target": "7–8 hours",
+				"note": "Critical for recovery and fat loss"
+			},
+			"dailySteps": {
+				"target": "8,000–10,000",
+				"note": "Daily activity for additional calorie burn"
+			}
+		},
+		"macroSplit": {
+			"protein": {
+				"percentage": "30–35%",
+				"priority": "High"
+			},
+			"carbs": {
+				"percentage": "35–40%",
+				"priority": "Moderate"
+			},
+			"fats": {
+				"percentage": "25–30%",
+				"priority": "Moderate"
+			}
+		},
+		"mealTiming": {
+			"preWorkout": {
+				"timing": "45–60 min before training",
+				"guideline": "30–40g carbs + light protein (banana, oats, coffee)"
+			},
+			"postWorkout": {
+				"timing": "Within 60 minutes",
+				"guideline": "35–40 g protein + 40–50g carbs"
+			},
+			"dailyDistribution": {
+				"proteinPerMeal": "35–40 g",
+				"mealsPerDay": "4–5",
+				"note": "Even protein distribution throughout day"
+			}
+		},
+		"foodQualityGuidelines": [
+			{
+				"id": "protein-sources",
+				"title": "Protein Sources",
+				"items": [
+					"Chicken breast",
+					"Eggs",
+					"Fish",
+					"Whey protein",
+					"Greek yogurt",
+					"Paneer"
+				]
+			},
+			{
+				"id": "carb-sources",
+				"title": "Quality Carbs",
+				"items": [
+					"Oats",
+					"Rice",
+					"Roti",
+					"Sweet potato",
+					"Fruits",
+					"Vegetables"
+				]
+			},
+			{
+				"id": "fat-sources",
+				"title": "Healthy Fats",
+				"items": [
+					"Nuts",
+					"Seeds",
+					"Olive oil",
+					"Avocado",
+					"Peanut butter"
+				]
+			}
+		],
+		"supplements": [
+			{
+				"name": "Whey Protein",
+				"dose": "1–2 scoops daily",
+				"purpose": "Meet daily protein target"
+			},
+			{
+				"name": "Creatine Monohydrate",
+				"dose": "5 g daily",
+				"purpose": "Strength and muscle retention"
+			},
+			{
+				"name": "Caffeine (optional)",
+				"dose": "200 mg pre-workout",
+				"purpose": "Energy and fat oxidation"
+			}
+		],
+		"rules": [
+			"Protein is non-negotiable daily",
+			"Stay hydrated throughout the day",
+			"Sleep 7–8 hours for recovery",
+			"Track progress weekly, not daily",
+			"Prioritize whole foods over processed",
+			"Maintain consistent meal timing"
+		]
+	}
+}
