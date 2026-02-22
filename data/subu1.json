@@ -1,0 +1,835 @@
+{
+	"user": {
+		"name": "Subrata",
+		"age": "35",
+		"weight": "74",
+		"weightUnit": "kg",
+		"height": "5'10\"",
+		"heightCm": "178 cm",
+		"goal": "Build a hybrid athletic physique with strength, endurance, mobility and long-term back health",
+		"dietType": "Indian vegetarian",
+      	"trainingTime": "morning"
+	},
+	"weeklySchedule": {
+		"1": "fullbody-strength-a",
+		"2": "upper-accessory",
+		"3": "fullbody-strength-b",
+		"4": "lower-core-day",
+		"5": "fullbody-strength-c",
+		"6": "running-zone2-day",
+		"0": "rest"
+	},
+	"workoutLibrary": [
+		{
+			"id": "fullbody-strength-a",
+			"title": "Full Body Strength A",
+			"description": "Push + squat focused full-body strength session with back-safe loading",
+			"duration": "80–90 min",
+			"image": "assets/images/fullbody.jpg"
+		},
+		{
+			"id": "upper-accessory",
+			"title": "Upper Accessory & Posture",
+			"description": "Upper hypertrophy and posture-focused back-safe session",
+			"duration": "70–80 min",
+			"image": "assets/images/upper.jpg"
+		},
+		{
+			"id": "fullbody-strength-b",
+			"title": "Full Body Strength B",
+			"description": "Leg press and hip thrust focused full-body strength session",
+			"duration": "85–90 min",
+			"image": "assets/images/fullbody.jpg"
+		},
+		{
+			"id": "lower-core-day",
+			"title": "Lower Volume + Core Stability",
+			"description": "Back-friendly lower body hypertrophy and stability session",
+			"duration": "70–80 min",
+			"image": "assets/images/lower.jpg"
+		},
+		{
+			"id": "fullbody-strength-c",
+			"title": "Full Body Strength C",
+			"description": "Upper pull + chest isolation + light hinge finish",
+			"duration": "80–90 min",
+			"image": "assets/images/fullbody.jpg"
+		},
+		{
+			"id": "running-zone2-day",
+			"title": "Running Day – Zone 2 Conditioning",
+			"description": "Back-friendly running session focused on aerobic fitness, recovery, and endurance. Includes warmup mobility, steady Zone 2 run, optional intervals, and cooldown.",
+			"duration": "40–50 min",
+			"image": "assets/images/cardio.jpg"
+		}
+	],
+	"workouts": {
+		"fullbody-strength-a": {
+			"id": "fullbody-strength-a",
+			"icon": "🏋️",
+			"title": "Full Body Strength A",
+			"duration": "80–90 min",
+			"description": "Push + squat focused full-body strength session with back-safe loading",
+			"segments": [
+			{
+				"type": "warmup",
+				"title": "Reset & Activation",
+				"duration": "6–8 min",
+				"exercises": [
+				{
+					"id": "wa-catcow",
+					"name": "Cat–Cow",
+					"sets": "1",
+					"reps": "10",
+					"target": ["spine mobility"],
+					"notes": "Move slowly, full range"
+				},
+				{
+					"id": "wa-deadbug",
+					"name": "Dead Bug",
+					"sets": "2",
+					"reps": "6 per side",
+					"target": ["core stability"],
+					"notes": "Lower back pressed down"
+				},
+				{
+					"id": "wa-squat",
+					"name": "Bodyweight Squat",
+					"sets": "1",
+					"reps": "15",
+					"target": ["legs"],
+					"notes": "Brace core before each rep"
+				}
+				]
+			},
+			{
+				"type": "main",
+				"title": "Primary Strength",
+				"duration": "55–60 min",
+				"exercises": [
+				{
+					"id": "a-inclinepress",
+					"name": "Low Incline Dumbbell Press",
+					"sets": "4",
+					"reps": "6–8",
+					"rest": "90 sec",
+					"rir": "2",
+					"target": ["chest", "shoulders", "triceps"],
+					"notes": "Slight elbow tuck, ribs down",
+					"youtube": "https://youtube.com/shorts/JAoHrwhWJZs?feature=share"
+				},
+				{
+					"id": "a-splitsquat",
+					"name": "DB Split Squat",
+					"sets": "3",
+					"reps": "8–10 per leg",
+					"rest": "90 sec",
+					"target": ["quads", "glutes"],
+					"notes": "Stay tall, controlled descent",
+					"youtube": "https://youtube.com/shorts/q_ONaiiyK3c?feature=share"
+				},
+				{
+					"id": "a-latpulldown",
+					"name": "Neutral Grip Lat Pulldown / Assisted Pull-up",
+					"sets": "4",
+					"reps": "8–10",
+					"rest": "90 sec",
+					"target": ["lats", "upper back"],
+					"notes": "Pull elbows down in arrow path",
+					"youtube": "https://youtube.com/shorts/sojAoHZLxVM?feature=share"
+				},
+				{
+					"id": "a-cablerow",
+					"name": "Seated Cable Row",
+					"sets": "3",
+					"reps": "10–12",
+					"rest": "75 sec",
+					"target": ["mid back"],
+					"notes": "Squeeze shoulder blades",
+					"youtube": "https://youtube.com/shorts/dL3fk2JSa3c?feature=share"
+				},
+				{
+					"id": "a-lateral",
+					"name": "Lateral Raise",
+					"sets": "3",
+					"reps": "15–20",
+					"rest": "60 sec",
+					"target": ["shoulders"],
+					"notes": "Light weight, controlled",
+					"youtube": "https://youtube.com/shorts/fXgTsx6r1DA?feature=share"
+				},
+				{
+					"id": "a-arms",
+					"name": "DB Curl + Pushdown",
+					"sets": "3",
+					"reps": "10–12",
+					"rest": "60 sec",
+					"target": ["biceps", "triceps"],
+					"notes": "Alternate as superset if desired",
+					"youtube": "https://youtube.com/shorts/XDXZFndpwQI?feature=share"
+				}
+				]
+			},
+			{
+				"type": "cooldown",
+				"title": "Cool Down",
+				"duration": "5–8 min",
+				"exercises": [
+				{
+					"id": "a-stretch",
+					"name": "Stretch & Breathing",
+					"sets": "1",
+					"duration": "5–8 min",
+					"target": ["recovery"],
+					"notes": "Child’s pose, chest stretch, deep breathing"
+				}
+				]
+			}
+			]
+		},
+
+		"upper-accessory": {
+			"id": "upper-accessory",
+			"icon": "💪",
+			"title": "Upper Accessory & Posture",
+			"duration": "70–80 min",
+			"description": "Upper hypertrophy and posture-focused back-safe session",
+			"segments": [
+			{
+				"type": "main",
+				"title": "Hypertrophy Work",
+				"duration": "60 min",
+				"exercises": [
+				{
+					"id": "u-facepull",
+					"name": "Face Pull",
+					"sets": "3",
+					"reps": "12–15",
+					"rest": "60 sec",
+					"target": ["rear delts", "upper back"],
+					"notes": "Pull toward nose, elbows high",
+					"youtube": "https://youtube.com/shorts/xVQC-LIdyhc?feature=share"
+				},
+				{
+					"id": "u-reardelt",
+					"name": "Rear Delt Cable / Machine Fly",
+					"sets": "3",
+					"reps": "12–15",
+					"rest": "60 sec",
+					"target": ["rear delts"],
+					"notes": "Control both directions",
+					"youtube": "https://youtube.com/shorts/lTFofYcnBKU?feature=share"
+				},
+				{
+					"id": "u-inclinecurl",
+					"name": "Incline DB Curl",
+					"sets": "3",
+					"reps": "8–12",
+					"rest": "75 sec",
+					"target": ["biceps"],
+					"notes": "Full stretch at bottom",
+					"youtube": "https://youtube.com/shorts/mb9y8LUFrKE?feature=share"
+				},
+				{
+					"id": "u-pushdown",
+					"name": "Rope Pushdown",
+					"sets": "3",
+					"reps": "8–12",
+					"rest": "75 sec",
+					"target": ["triceps"],
+					"notes": "Spread rope at bottom",
+					"youtube": "https://youtube.com/shorts/cGJuo_m366E?feature=share"
+				},
+				{
+					"id": "u-bandwalk",
+					"name": "Banded Lateral Walk / Side-Lying Leg Raise",
+					"sets": "3",
+					"reps": "15–20",
+					"rest": "45 sec",
+					"target": ["glute med"],
+					"notes": "Small controlled steps"
+				},
+				{
+					"id": "u-pallof",
+					"name": "Pallof Press",
+					"sets": "3",
+					"reps": "10",
+					"rest": "45 sec",
+					"target": ["core stability"],
+					"notes": "No torso rotation"
+				}
+				]
+			}
+			]
+		},
+
+		"fullbody-strength-b": {
+			"id": "fullbody-strength-b",
+			"icon": "🏋️",
+			"title": "Full Body Strength B",
+			"duration": "85–90 min",
+			"description": "Leg press and hip thrust focused full-body strength session",
+			"segments": [
+			{
+				"type": "main",
+				"title": "Primary Strength",
+				"duration": "65 min",
+				"exercises": [
+				{
+					"id": "b-legpress",
+					"name": "Leg Press",
+					"sets": "4",
+					"reps": "8–10",
+					"rest": "90 sec",
+					"target": ["quads", "glutes"],
+					"notes": "Lower slowly, full depth",
+					"youtube": "https://youtube.com/shorts/seeNLbaqz4o?feature=share"
+				},
+				{
+					"id": "b-machinepress",
+					"name": "Machine Chest Press",
+					"sets": "4",
+					"reps": "8–10",
+					"rest": "90 sec",
+					"target": ["chest"],
+					"notes": "Control negative",
+					"youtube": "https://youtube.com/shorts/zhRvYnR7QzM?feature=share"
+				},
+				{
+					"id": "b-row",
+					"name": "Straight Bar Cable Row",
+					"sets": "4",
+					"reps": "8–10",
+					"rest": "90 sec",
+					"target": ["mid back"],
+					"notes": "Chest tall, squeeze back",
+					"youtube": "https://youtube.com/shorts/iUFJnElb4gA?feature=share"
+				},
+				{
+					"id": "b-hipthrust",
+					"name": "Hip Thrust",
+					"sets": "3",
+					"reps": "8–12",
+					"rest": "90 sec",
+					"target": ["glutes"],
+					"notes": "Pause and squeeze at top",
+					"youtube": "https://youtube.com/shorts/GLfLqesldpY?feature=share"
+				},
+				{
+					"id": "b-reardelt",
+					"name": "Rear Delt Machine Fly",
+					"sets": "3",
+					"reps": "12–15",
+					"rest": "60 sec",
+					"target": ["rear delts"],
+					"youtube": "https://youtube.com/shorts/qpMBXrSnvus?feature=share"
+				},
+				{
+					"id": "b-core",
+					"name": "Plank",
+					"sets": "2",
+					"duration": "45 sec",
+					"rest": "45 sec",
+					"target": ["core"],
+					"notes": "Neutral spine"
+				}
+				]
+			}
+			]
+		},
+
+		"lower-core-day": {
+			"id": "lower-core-day",
+			"icon": "🦵",
+			"title": "Lower Volume + Core Stability",
+			"duration": "70–80 min",
+			"description": "Back-friendly lower body hypertrophy and stability session",
+			"segments": [
+			{
+				"type": "main",
+				"title": "Lower Body Volume",
+				"duration": "60 min",
+				"exercises": [
+				{
+					"id": "l-legcurl",
+					"name": "Seated or Lying Leg Curl",
+					"sets": "3",
+					"reps": "12–15",
+					"rest": "75 sec",
+					"target": ["hamstrings"],
+					"youtube": "https://youtube.com/shorts/DRo1CctpxXo?feature=share"
+				},
+				{
+					"id": "l-calf",
+					"name": "Standing Calf Raise",
+					"sets": "4",
+					"reps": "12–15",
+					"rest": "60 sec",
+					"target": ["calves"],
+					"youtube": "https://youtube.com/shorts/V89daJ19zKE?feature=share"
+				},
+				{
+					"id": "l-stepup",
+					"name": "DB Step-Up or Glute Bridge",
+					"sets": "3",
+					"reps": "10 per leg",
+					"rest": "75 sec",
+					"target": ["glutes", "legs"],
+					"youtube": "https://www.youtube.com/watch?v=dQqApCGd5Ss"
+				},
+				{
+					"id": "l-birddog",
+					"name": "Bird Dog",
+					"sets": "3",
+					"reps": "6 per side",
+					"rest": "45 sec",
+					"target": ["core stability"]
+				},
+				{
+					"id": "l-sideplank",
+					"name": "Side Plank",
+					"sets": "2",
+					"duration": "30–40 sec",
+					"rest": "45 sec",
+					"target": ["core"]
+				},
+				{
+					"id": "l-legext",
+					"name": "Light Leg Extension",
+					"sets": "2",
+					"reps": "15",
+					"rest": "60 sec",
+					"target": ["quads"],
+					"youtube": "https://youtube.com/shorts/VOxJCzwx63Y?feature=share"
+				}
+				]
+			}
+			]
+		},
+
+		"fullbody-strength-c": {
+			"id": "fullbody-strength-c",
+			"icon": "🏋️",
+			"title": "Full Body Strength C",
+			"duration": "80–90 min",
+			"description": "Upper pull + chest isolation + light hinge finish",
+			"segments": [
+			{
+				"type": "main",
+				"title": "Strength & Hypertrophy",
+				"duration": "65 min",
+				"exercises": [
+				{
+					"id": "c-row",
+					"name": "Chest-Supported DB Row",
+					"sets": "4",
+					"reps": "8–10",
+					"rest": "90 sec",
+					"target": ["upper back"],
+					"youtube": "https://youtube.com/shorts/l36HimcyRd0?feature=share"
+				},
+				{
+					"id": "c-pullup",
+					"name": "Pull-ups / Assisted",
+					"sets": "3",
+					"reps": "5–8",
+					"rest": "90 sec",
+					"target": ["lats"],
+					"youtube": "https://youtube.com/shorts/_ustQzj-vWg?feature=share"
+				},
+				{
+					"id": "c-fly",
+					"name": "Chest Fly Machine",
+					"sets": "3",
+					"reps": "12",
+					"rest": "75 sec",
+					"target": ["chest"],
+					"youtube": "https://youtube.com/shorts/ocXaM_qmjKM?feature=share"
+				},
+				{
+					"id": "c-lateral",
+					"name": "Seated Lateral Raise",
+					"sets": "3",
+					"reps": "12–15",
+					"rest": "60 sec",
+					"target": ["shoulders"],
+					"youtube": "https://youtube.com/shorts/rrtjV9SCZuE?feature=share"
+				},
+				{
+					"id": "c-skull",
+					"name": "DB Skullcrusher",
+					"sets": "3",
+					"reps": "10–12",
+					"rest": "60 sec",
+					"target": ["triceps"],
+					"youtube": "https://youtube.com/shorts/JCJPkkNSmPg?feature=share"
+				},
+				{
+					"id": "c-rdl",
+					"name": "Light DB Romanian Deadlift",
+					"sets": "2",
+					"reps": "10–12",
+					"rest": "75 sec",
+					"target": ["hamstrings", "glutes"],
+					"notes": "Moderate weight, perfect hinge",
+					"youtube": "https://youtube.com/shorts/1t4JK9KvHl0?feature=share"
+				}
+				]
+			}
+			]
+		},
+
+		"running-zone2-day": {
+			"id": "running-zone2-day",
+			"icon": "🏃",
+			"title": "Running Day – Zone 2 Conditioning",
+			"duration": "40–50 min",
+			"description": "Back-friendly running session focused on aerobic fitness, recovery, and endurance. Includes warmup mobility, steady Zone 2 run, optional intervals, and cooldown.",
+			"segments": [
+			{
+				"type": "warmup",
+				"title": "Warmup & Mobility",
+				"duration": "6–8 min",
+				"exercises": [
+				{
+					"id": "run-walk",
+					"name": "Easy Walk",
+					"sets": "1",
+					"duration": "2–3 min",
+					"target": ["heart rate prep"],
+					"notes": "Gradually increase pace"
+				},
+				{
+					"id": "run-legswings",
+					"name": "Leg Swings (Front/Side)",
+					"sets": "1",
+					"reps": "10 each direction per leg",
+					"target": ["hips", "hamstrings"],
+					"notes": "Controlled motion, hold support if needed"
+				},
+				{
+					"id": "run-glute",
+					"name": "Glute Bridge",
+					"sets": "1",
+					"reps": "15",
+					"target": ["glutes"],
+					"notes": "Activate glutes before running"
+				},
+				{
+					"id": "run-calf",
+					"name": "Calf Raises",
+					"sets": "1",
+					"reps": "15",
+					"target": ["calves", "ankles"],
+					"notes": "Slow and controlled"
+				}
+				]
+			},
+			{
+				"type": "conditioning",
+				"title": "Zone 2 Run",
+				"duration": "25–35 min",
+				"exercises": [
+				{
+					"id": "run-zone2",
+					"name": "Steady Run or Jog",
+					"sets": "1",
+					"duration": "25–35 min",
+					"intensity": "zone 2",
+					"target": ["aerobic base", "fat metabolism"],
+					"notes": "Conversational pace, nasal breathing preferred. If outdoors, choose flat route."
+				}
+				]
+			},
+			{
+				"type": "conditioning",
+				"title": "Optional Intervals (Only if feeling fresh)",
+				"duration": "5–8 min",
+				"exercises": [
+				{
+					"id": "run-intervals",
+					"name": "Short Run Intervals",
+					"sets": "4–6",
+					"duration": "20 sec fast / 60 sec easy walk",
+					"intensity": "moderate",
+					"target": ["running efficiency"],
+					"notes": "Skip if legs tired or back stiff"
+				}
+				]
+			},
+			{
+				"type": "cooldown",
+				"title": "Cool Down & Recovery",
+				"duration": "5–8 min",
+				"exercises": [
+				{
+					"id": "run-walkcool",
+					"name": "Slow Walk",
+					"sets": "1",
+					"duration": "2–3 min",
+					"target": ["heart rate recovery"],
+					"notes": "Gradually slow down"
+				},
+				{
+					"id": "run-stretch",
+					"name": "Lower Body Stretch Flow",
+					"sets": "1",
+					"duration": "3–5 min",
+					"target": ["calves", "hips", "hamstrings", "spine"],
+					"notes": "Include calf stretch, hamstring stretch, hip flexor stretch, gentle spinal twists"
+				}
+				]
+			}
+			]
+		},
+
+		"running-zone2-day": {
+			"id": "running-zone2-day",
+			"icon": "🏃",
+			"title": "Running Day – Zone 2 Conditioning",
+			"duration": "40–50 min",
+			"description": "Back-friendly running session focused on aerobic fitness, recovery, and endurance. Includes warmup mobility, steady Zone 2 run, optional intervals, and cooldown.",
+			"segments": [
+			{
+				"type": "warmup",
+				"title": "Warmup & Mobility",
+				"duration": "6–8 min",
+				"exercises": [
+				{
+					"id": "run-walk",
+					"name": "Easy Walk",
+					"sets": "1",
+					"duration": "2–3 min",
+					"target": ["heart rate prep"],
+					"notes": "Gradually increase pace"
+				},
+				{
+					"id": "run-legswings",
+					"name": "Leg Swings (Front/Side)",
+					"sets": "1",
+					"reps": "10 each direction per leg",
+					"target": ["hips", "hamstrings"],
+					"notes": "Controlled motion, hold support if needed"
+				},
+				{
+					"id": "run-glute",
+					"name": "Glute Bridge",
+					"sets": "1",
+					"reps": "15",
+					"target": ["glutes"],
+					"notes": "Activate glutes before running"
+				},
+				{
+					"id": "run-calf",
+					"name": "Calf Raises",
+					"sets": "1",
+					"reps": "15",
+					"target": ["calves", "ankles"],
+					"notes": "Slow and controlled"
+				}
+				]
+			},
+			{
+				"type": "conditioning",
+				"title": "Zone 2 Run",
+				"duration": "25–35 min",
+				"exercises": [
+				{
+					"id": "run-zone2",
+					"name": "Steady Run or Jog",
+					"sets": "1",
+					"duration": "25–35 min",
+					"intensity": "zone 2",
+					"target": ["aerobic base", "fat metabolism"],
+					"notes": "Conversational pace, nasal breathing preferred. If outdoors, choose flat route."
+				}
+				]
+			},
+			{
+				"type": "conditioning",
+				"title": "Optional Intervals (Only if feeling fresh)",
+				"duration": "5–8 min",
+				"exercises": [
+				{
+					"id": "run-intervals",
+					"name": "Short Run Intervals",
+					"sets": "4–6",
+					"duration": "20 sec fast / 60 sec easy walk",
+					"intensity": "moderate",
+					"target": ["running efficiency"],
+					"notes": "Skip if legs tired or back stiff"
+				}
+				]
+			},
+			{
+				"type": "cooldown",
+				"title": "Cool Down & Recovery",
+				"duration": "5–8 min",
+				"exercises": [
+				{
+					"id": "run-walkcool",
+					"name": "Slow Walk",
+					"sets": "1",
+					"duration": "2–3 min",
+					"target": ["heart rate recovery"],
+					"notes": "Gradually slow down"
+				},
+				{
+					"id": "run-stretch",
+					"name": "Lower Body Stretch Flow",
+					"sets": "1",
+					"duration": "3–5 min",
+					"target": ["calves", "hips", "hamstrings", "spine"],
+					"notes": "Include calf stretch, hamstring stretch, hip flexor stretch, gentle spinal twists"
+				}
+				]
+			}
+			]
+		}
+	},
+	"nutrition": {
+		"dailyTargets": {
+		"calories": {
+			"trainingDay": {
+			"target": "2400–2500 kcal",
+			"note": "Near maintenance to support strength and recovery"
+			},
+			"restDay": {
+			"target": "2100–2200 kcal",
+			"note": "Moderate deficit for fat loss"
+			},
+			"weeklyAverageDeficit": "≈300 kcal/day"
+		},
+
+		"protein": {
+			"target": "130–150 g",
+			"perKg": "1.8–2.0 g/kg",
+			"note": "Essential for muscle retention and recovery at 35+"
+		},
+
+		"carbohydrates": {
+			"target": "280–330 g",
+			"percentage": "40–45%",
+			"note": "Primary fuel for hybrid training and performance"
+		},
+
+		"fats": {
+			"target": "65–80 g",
+			"percentage": "25–30%",
+			"note": "Supports hormones and joint health"
+		},
+
+		"water": {
+			"base": "3 L",
+			"trainingDay": "3.5 L",
+			"note": "Increase intake post-workout and in warm climate"
+		},
+
+		"sleep": {
+			"target": "7.5–8.5 hours",
+			"note": "Critical for fat loss, testosterone, and recovery"
+		},
+
+		"dailySteps": {
+			"target": "7,000–9,000",
+			"note": "Maintain outside gym without compromising recovery"
+		}
+		},
+
+		"macroSplit": {
+		"protein": {
+			"percentage": "25–30%",
+			"priority": "High"
+		},
+		"carbs": {
+			"percentage": "40–45%",
+			"priority": "High"
+		},
+		"fats": {
+			"percentage": "25–30%",
+			"priority": "Moderate"
+		}
+		},
+
+		"mealTiming": {
+		"preWorkout": {
+			"timing": "30–45 min before training",
+			"guideline": "Light carbs if needed (fruit, dates), optional black coffee"
+		},
+		"postWorkout": {
+			"timing": "Within 60 minutes",
+			"guideline": "30–40 g protein + carbs for recovery"
+		},
+		"dailyDistribution": {
+			"proteinPerMeal": "30–35 g",
+			"mealsPerDay": "4–5",
+			"note": "Even distribution improves muscle protein synthesis"
+		}
+		},
+
+		"foodQualityGuidelines": [
+		{
+			"id": "protein-sources",
+			"title": "High-Quality Vegetarian Proteins",
+			"items": [
+			"Whey isolate",
+			"Paneer (low-fat if cutting)",
+			"Tofu / soy chunks",
+			"Greek yogurt / curd",
+			"Dal + rice combinations"
+			]
+		},
+		{
+			"id": "carb-sources",
+			"title": "Performance Carbohydrates",
+			"items": [
+			"Oats",
+			"Rice",
+			"Millets",
+			"Fruits",
+			"Vegetables"
+			]
+		},
+		{
+			"id": "fat-sources",
+			"title": "Healthy Fats",
+			"items": [
+			"Nuts & seeds",
+			"Olive oil",
+			"Ghee (small amounts)",
+			"Avocado"
+			]
+		}
+		],
+
+		"supplements": [
+		{
+			"name": "Whey Protein Isolate",
+			"dose": "1 scoop post-workout",
+			"purpose": "Meet daily protein target"
+		},
+		{
+			"name": "Creatine Monohydrate",
+			"dose": "5 g daily",
+			"purpose": "Strength, power, muscle fullness"
+		},
+		{
+			"name": "Omega-3",
+			"dose": "1–2 g daily",
+			"purpose": "Joint, heart, inflammation support"
+		},
+		{
+			"name": "Vitamin D3",
+			"dose": "As per blood levels",
+			"purpose": "Hormonal and bone health"
+		}
+		],
+
+		"rules": [
+		"Do not cut carbs aggressively — performance matters",
+		"Protein is non-negotiable daily",
+		"Hydration and sleep are part of nutrition",
+		"Adjust calories based on weekly trend, not daily weight"
+		]
+	}
+}
