@@ -1,0 +1,879 @@
+{
+	"user": {
+		"name": "Shreya",
+		"age": "22",
+		"weight": "68",
+		"weightUnit": "kg",
+		"height": "5'1\"",
+		"heightCm": "155 cm",
+		"goal": "Build strength, improve body composition and develop consistent training habits",
+		"dietType": "Indian vegetarian",
+		"trainingTime": "evening"
+	},
+	"weeklySchedule": {
+		"1": "day1-lower",
+		"2": "day2-upper",
+		"3": "day3-glutes-cardio",
+		"4": "day4-fullbody-light",
+		"5": "day5-cardio-core",
+		"6": "rest",
+		"0": "rest"
+	},
+	"workoutLibrary": [
+		{
+			"id": "day1-lower",
+			"title": "Day 1 – Lower Body + Core",
+			"description": "Lower body strength workout focused on glutes, quads, hamstrings and core stability",
+			"duration": "60–70 min",
+			"image": "assets/images/lower.jpg"
+		},
+		{
+			"id": "day2-upper",
+			"title": "Day 2 – Upper Body",
+			"description": "Upper body workout building strength in chest, back, shoulders and arms",
+			"duration": "60–70 min",
+			"image": "assets/images/upper.jpg"
+		},
+		{
+			"id": "day3-glutes-cardio",
+			"title": "Day 3 – Glutes + Cardio",
+			"description": "Glute-focused workout with cardio conditioning",
+			"duration": "55–65 min",
+			"image": "assets/images/lower.jpg"
+		},
+		{
+			"id": "day4-fullbody-light",
+			"title": "Day 4 – Full Body Light",
+			"description": "Light full body circuit with cardio",
+			"duration": "55–65 min",
+			"image": "assets/images/fullbody.jpg"
+		},
+		{
+			"id": "day5-cardio-core",
+			"title": "Day 5 – Cardio + Core",
+			"description": "Cardio conditioning with core strengthening",
+			"duration": "40–50 min",
+			"image": "assets/images/cardio.jpg"
+		}
+	],
+	"workouts": {
+		"day1-lower": {
+			"id": "day1-lower",
+			"icon": "🦵",
+			"title": "Day 1 – Lower Body + Core",
+			"duration": "60–70 min",
+			"description": "Lower body strength workout focused on glutes, quads, hamstrings and core stability",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Warmup",
+					"duration": "8–10 min",
+					"exercises": [
+						{
+							"id": "d1-walk",
+							"name": "Easy Walk",
+							"sets": "1",
+							"duration": "3–4 min",
+							"target": ["warmup"],
+							"notes": "Gradually increase pace"
+						},
+						{
+							"id": "d1-bw-squat",
+							"name": "Bodyweight Squat",
+							"sets": "1",
+							"reps": "15",
+							"target": ["legs"],
+							"notes": "Brace core, sit back slightly",
+							"youtube": "https://www.youtube.com/watch?v=aclHkVaku9U"
+						},
+						{
+							"id": "d1-glute-bridge-warm",
+							"name": "Glute Bridge",
+							"sets": "1",
+							"reps": "15",
+							"target": ["glutes"],
+							"notes": "Pause 1s at top",
+							"youtube": "https://www.youtube.com/watch?v=m2Zx-57cSok"
+						},
+						{
+							"id": "d1-leg-swing",
+							"name": "Leg Swings",
+							"sets": "1",
+							"reps": "10 each direction",
+							"target": ["hips"],
+							"notes": "Controlled movement"
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Strength",
+					"duration": "35–40 min",
+					"exercises": [
+						{
+							"id": "d1-goblet-squat",
+							"name": "Goblet Squat",
+							"sets": "3",
+							"reps": "10",
+							"rest": "75 sec",
+							"target": ["quads", "glutes"],
+							"notes": "Chest tall, knees track over toes",
+							"youtube": "https://www.youtube.com/watch?v=MeIiIdhvXT4"
+						},
+						{
+							"id": "d1-leg-press",
+							"name": "Leg Press",
+							"sets": "3",
+							"reps": "12",
+							"rest": "90 sec",
+							"target": ["quads", "glutes"],
+							"notes": "Lower slowly, full depth",
+							"youtube": "https://youtube.com/shorts/seeNLbaqz4o?feature=share"
+						},
+						{
+							"id": "d1-hip-thrust",
+							"name": "Hip Thrust",
+							"sets": "3",
+							"reps": "12",
+							"rest": "75 sec",
+							"target": ["glutes"],
+							"notes": "Squeeze glutes at top",
+							"youtube": "https://youtube.com/shorts/GLfLqesldpY?feature=share"
+						},
+						{
+							"id": "d1-leg-curl",
+							"name": "Seated Leg Curl",
+							"sets": "3",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["hamstrings"],
+							"youtube": "https://youtube.com/shorts/DRo1CctpxXo?feature=share"
+						},
+						{
+							"id": "d1-calf-raise",
+							"name": "Standing Calf Raise",
+							"sets": "3",
+							"reps": "15",
+							"rest": "45 sec",
+							"target": ["calves"],
+							"notes": "Pause at top",
+							"youtube": "https://youtube.com/shorts/V89daJ19zKE?feature=share"
+						}
+					]
+				},
+				{
+					"type": "core",
+					"title": "Core",
+					"duration": "5–6 min",
+					"exercises": [
+						{
+							"id": "d1-deadbug",
+							"name": "Dead Bug",
+							"sets": "2",
+							"reps": "8/side",
+							"rest": "45 sec",
+							"target": ["core stability"],
+							"notes": "Lower back stays pressed",
+							"youtube": "https://www.youtube.com/watch?v=4XLEnwUrJgI"
+						}
+					]
+				},
+				{
+					"type": "conditioning",
+					"title": "Cardio",
+					"duration": "10–12 min",
+					"exercises": [
+						{
+							"id": "d1-cardio",
+							"name": "Incline Walk / Cycle",
+							"sets": "1",
+							"duration": "10–12 min",
+							"target": ["cardio"],
+							"youtube": "https://www.youtube.com/watch?v=ml6cT4AZdqI"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cooldown",
+					"duration": "5–6 min",
+					"exercises": [
+						{
+							"id": "d1-stretch",
+							"name": "Lower Body Stretch Flow",
+							"sets": "1",
+							"duration": "5–6 min",
+							"target": ["recovery"],
+							"notes": "Hamstrings, quads, calves, hips"
+						}
+					]
+				}
+			]
+		},
+
+		"day2-upper": {
+			"id": "day2-upper",
+			"icon": "💪",
+			"title": "Day 2 – Upper Body",
+			"duration": "60–70 min",
+			"description": "Upper body workout building strength in chest, back, shoulders and arms",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Warmup",
+					"duration": "8–10 min",
+					"exercises": [
+						{
+							"id": "d2-walk",
+							"name": "Easy Walk",
+							"sets": "1",
+							"duration": "3–4 min",
+							"target": ["warmup"],
+							"notes": "Light cardio warmup"
+						},
+						{
+							"id": "d2-arm-circles",
+							"name": "Arm Circles",
+							"sets": "1",
+							"reps": "20",
+							"target": ["shoulders"],
+							"youtube": "https://www.youtube.com/watch?v=140RTNMciH8"
+						},
+						{
+							"id": "d2-band-row",
+							"name": "Light Band Row",
+							"sets": "1",
+							"reps": "15",
+							"target": ["upper back"],
+							"notes": "Activate back muscles"
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Strength",
+					"duration": "40–45 min",
+					"exercises": [
+						{
+							"id": "d2-chest-press",
+							"name": "Machine Chest Press",
+							"sets": "3",
+							"reps": "10",
+							"rest": "75 sec",
+							"target": ["chest", "triceps"],
+							"youtube": "https://youtube.com/shorts/zhRvYnR7QzM?feature=share"
+						},
+						{
+							"id": "d2-lat-pulldown",
+							"name": "Lat Pulldown",
+							"sets": "3",
+							"reps": "10",
+							"rest": "75 sec",
+							"target": ["lats", "back"],
+							"youtube": "https://youtube.com/shorts/sojAoHZLxVM?feature=share"
+						},
+						{
+							"id": "d2-cable-row",
+							"name": "Seated Cable Row",
+							"sets": "3",
+							"reps": "12",
+							"rest": "75 sec",
+							"target": ["mid back"],
+							"youtube": "https://youtube.com/shorts/dL3fk2JSa3c?feature=share"
+						},
+						{
+							"id": "d2-shoulder-press",
+							"name": "Dumbbell Shoulder Press",
+							"sets": "2",
+							"reps": "10",
+							"rest": "60 sec",
+							"target": ["shoulders"],
+							"youtube": "https://youtube.com/shorts/rST1ZZ4ol6g?feature=share"
+						},
+						{
+							"id": "d2-lateral-raise",
+							"name": "Dumbbell Lateral Raise",
+							"sets": "2",
+							"reps": "12",
+							"rest": "45 sec",
+							"target": ["shoulders"],
+							"youtube": "https://youtube.com/shorts/fXgTsx6r1DA?feature=share"
+						},
+						{
+							"id": "d2-pushdown",
+							"name": "Rope Pushdown",
+							"sets": "2",
+							"reps": "12",
+							"rest": "45 sec",
+							"target": ["triceps"],
+							"youtube": "https://youtube.com/shorts/wA14jKPnUog?feature=share"
+						},
+						{
+							"id": "d2-curl",
+							"name": "Dumbbell Curl",
+							"sets": "2",
+							"reps": "12",
+							"rest": "45 sec",
+							"target": ["biceps"],
+							"youtube": "https://youtube.com/shorts/XDXZFndpwQI?feature=share"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cooldown",
+					"duration": "5–6 min",
+					"exercises": [
+						{
+							"id": "d2-stretch",
+							"name": "Upper Body Stretch",
+							"sets": "1",
+							"duration": "5–6 min",
+							"target": ["recovery"],
+							"notes": "Chest, shoulders, triceps, back"
+						}
+					]
+				}
+			]
+		},
+
+		"beginner-upper-body-day": {
+			"id": "beginner-upper-body-day",
+			"icon": "💪",
+			"title": "Beginner Upper Body Push & Pull",
+			"duration": "60–70 min",
+			"description": "Beginner-friendly upper body workout building strength in chest, back, shoulders and arms",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Warmup",
+					"duration": "5–6 min",
+					"exercises": [
+						{
+							"id": "arm-circles",
+							"name": "Arm Circles",
+							"sets": "1",
+							"reps": "20",
+							"target": ["shoulders"]
+						},
+						{
+							"id": "band-row",
+							"name": "Light Band Row",
+							"sets": "1",
+							"reps": "15",
+							"target": ["upper back"]
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Primary Strength",
+					"duration": "45 min",
+					"exercises": [
+						{
+							"id": "machine-chest-press",
+							"name": "Machine Chest Press",
+							"sets": "3",
+							"reps": "10",
+							"rest": "75 sec",
+							"tempo": "2-1-2",
+							"rir": "2",
+							"target": ["chest", "triceps"],
+							"youtube": "https://youtube.com/shorts/zhRvYnR7QzM?feature=share"
+						},
+						{
+							"id": "lat-pulldown",
+							"name": "Lat Pulldown",
+							"sets": "3",
+							"reps": "10",
+							"rest": "75 sec",
+							"tempo": "2-1-2",
+							"rir": "2",
+							"target": ["lats", "back"],
+							"youtube": "https://youtube.com/shorts/sojAoHZLxVM?feature=share"
+						},
+						{
+							"id": "cable-row",
+							"name": "Seated Cable Row",
+							"sets": "3",
+							"reps": "12",
+							"rest": "75 sec",
+							"tempo": "2-1-2",
+							"rir": "2",
+							"target": ["mid back"],
+							"youtube": "https://youtube.com/shorts/dL3fk2JSa3c?feature=share"
+						},
+						{
+							"id": "db-shoulder-press",
+							"name": "Dumbbell Shoulder Press",
+							"sets": "2",
+							"reps": "10",
+							"rest": "60 sec",
+							"rir": "2",
+							"target": ["shoulders"]
+						},
+						{
+							"id": "lateral-raise",
+							"name": "Dumbbell Lateral Raise",
+							"sets": "2",
+							"reps": "12",
+							"rest": "45 sec",
+							"target": ["shoulders"],
+							"youtube": "https://youtube.com/shorts/fXgTsx6r1DA?feature=share"
+						},
+						{
+							"id": "rope-pushdown",
+							"name": "Rope Pushdown",
+							"sets": "2",
+							"reps": "12",
+							"rest": "45 sec",
+							"target": ["triceps"],
+							"youtube": "https://youtube.com/shorts/cGJuo_m366E?feature=share"
+						},
+						{
+							"id": "db-curl",
+							"name": "Dumbbell Curl",
+							"sets": "2",
+							"reps": "12",
+							"rest": "45 sec",
+							"target": ["biceps"],
+							"youtube": "https://youtube.com/shorts/XDXZFndpwQI?feature=share"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cooldown",
+					"duration": "5 min",
+					"exercises": [
+						{
+							"id": "upper-stretch",
+							"name": "Upper Body Stretch",
+							"sets": "1",
+							"duration": "5 min",
+							"target": ["recovery"]
+						}
+					]
+				}
+			]
+		},
+
+		"day3-glutes-cardio": {
+			"id": "day3-glutes-cardio",
+			"icon": "🍑",
+			"title": "Day 3 – Glutes + Cardio",
+			"duration": "55–65 min",
+			"description": "Glute-focused workout with cardio conditioning",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Warmup",
+					"duration": "6–8 min",
+					"exercises": [
+						{
+							"id": "d3-walk",
+							"name": "Easy Walk",
+							"sets": "1",
+							"duration": "3 min",
+							"target": ["warmup"]
+						},
+						{
+							"id": "d3-glute-activation",
+							"name": "Glute Bridge",
+							"sets": "1",
+							"reps": "15",
+							"target": ["glutes"],
+							"youtube": "https://www.youtube.com/watch?v=m2Zx-57cSok"
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Strength",
+					"duration": "30–35 min",
+					"exercises": [
+						{
+							"id": "d3-hip-thrust",
+							"name": "Hip Thrust",
+							"sets": "3",
+							"reps": "12",
+							"rest": "75 sec",
+							"target": ["glutes"],
+							"youtube": "https://youtube.com/shorts/GLfLqesldpY?feature=share"
+						},
+						{
+							"id": "d3-step-ups",
+							"name": "Step Ups",
+							"sets": "3",
+							"reps": "10/leg",
+							"rest": "75 sec",
+							"target": ["glutes", "quads"],
+							"youtube": "https://www.youtube.com/watch?v=dQqApCGd5Ss"
+						},
+						{
+							"id": "d3-leg-extension",
+							"name": "Leg Extension",
+							"sets": "3",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["quads"],
+							"youtube": "https://youtube.com/shorts/VOxJCzwx63Y?feature=share"
+						},
+						{
+							"id": "d3-hamstring-curl",
+							"name": "Hamstring Curl",
+							"sets": "3",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["hamstrings"],
+							"youtube": "https://youtube.com/shorts/DRo1CctpxXo?feature=share"
+						}
+					]
+				},
+				{
+					"type": "conditioning",
+					"title": "Cardio",
+					"duration": "15 min",
+					"exercises": [
+						{
+							"id": "d3-cardio",
+							"name": "Brisk Walk / Bike",
+							"sets": "1",
+							"duration": "15 min",
+							"target": ["cardio"],
+							"youtube": "https://www.youtube.com/watch?v=ml6cT4AZdqI"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cooldown",
+					"duration": "5 min",
+					"exercises": [
+						{
+							"id": "d3-stretch",
+							"name": "Lower Body Stretch",
+							"sets": "1",
+							"duration": "5 min",
+							"target": ["recovery"]
+						}
+					]
+				}
+			]
+		},
+
+		"day4-fullbody-light": {
+			"id": "day4-fullbody-light",
+			"icon": "🏋️",
+			"title": "Day 4 – Full Body Light",
+			"duration": "55–65 min",
+			"description": "Light full body circuit with cardio",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Warmup",
+					"duration": "6–8 min",
+					"exercises": [
+						{
+							"id": "d4-walk",
+							"name": "Easy Walk",
+							"sets": "1",
+							"duration": "3–4 min",
+							"target": ["warmup"]
+						},
+						{
+							"id": "d4-mobility",
+							"name": "Arm Circles + Leg Swings",
+							"sets": "1",
+							"reps": "10 each",
+							"target": ["mobility"]
+						}
+					]
+				},
+				{
+					"type": "main",
+					"title": "Circuit",
+					"duration": "30–35 min",
+					"exercises": [
+						{
+							"id": "d4-incline-press",
+							"name": "Incline DB Press",
+							"sets": "2",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["chest"],
+							"youtube": "https://youtube.com/shorts/JAoHrwhWJZs?feature=share"
+						},
+						{
+							"id": "d4-lat-pulldown",
+							"name": "Lat Pulldown",
+							"sets": "2",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["back"],
+							"youtube": "https://youtube.com/shorts/sojAoHZLxVM?feature=share"
+						},
+						{
+							"id": "d4-squat",
+							"name": "Bodyweight Squat",
+							"sets": "2",
+							"reps": "15",
+							"rest": "45 sec",
+							"target": ["legs"],
+							"youtube": "https://www.youtube.com/watch?v=aclHkVaku9U"
+						},
+						{
+							"id": "d4-cable-row",
+							"name": "Cable Row",
+							"sets": "2",
+							"reps": "12",
+							"rest": "60 sec",
+							"target": ["back"],
+							"youtube": "https://youtube.com/shorts/dL3fk2JSa3c?feature=share"
+						},
+						{
+							"id": "d4-lateral-raise",
+							"name": "Lateral Raise",
+							"sets": "2",
+							"reps": "15",
+							"rest": "45 sec",
+							"target": ["shoulders"],
+							"youtube": "https://youtube.com/shorts/fXgTsx6r1DA?feature=share"
+						}
+					]
+				},
+				{
+					"type": "conditioning",
+					"title": "Cardio",
+					"duration": "12–15 min",
+					"exercises": [
+						{
+							"id": "d4-cardio",
+							"name": "Treadmill Walk",
+							"sets": "1",
+							"duration": "12–15 min",
+							"target": ["cardio"],
+							"youtube": "https://www.youtube.com/watch?v=ml6cT4AZdqI"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cooldown",
+					"duration": "5 min",
+					"exercises": [
+						{
+							"id": "d4-stretch",
+							"name": "Full Body Stretch",
+							"sets": "1",
+							"duration": "5 min",
+							"target": ["recovery"]
+						}
+					]
+				}
+			]
+		},
+
+		"day5-cardio-core": {
+			"id": "day5-cardio-core",
+			"icon": "🏃",
+			"title": "Day 5 – Cardio + Core",
+			"duration": "40–50 min",
+			"description": "Cardio conditioning with core strengthening",
+			"segments": [
+				{
+					"type": "warmup",
+					"title": "Warmup",
+					"duration": "5 min",
+					"exercises": [
+						{
+							"id": "d5-walk-warm",
+							"name": "Easy Walk",
+							"sets": "1",
+							"duration": "5 min",
+							"target": ["warmup"]
+						}
+					]
+				},
+				{
+					"type": "conditioning",
+					"title": "Cardio",
+					"duration": "20–25 min",
+					"exercises": [
+						{
+							"id": "d5-jog",
+							"name": "Easy Jog / Walk",
+							"sets": "1",
+							"duration": "20–25 min",
+							"target": ["cardio"],
+							"youtube": "https://www.youtube.com/watch?v=brFHyOtTwH4"
+						}
+					]
+				},
+				{
+					"type": "core",
+					"title": "Core",
+					"duration": "8–10 min",
+					"exercises": [
+						{
+							"id": "d5-plank",
+							"name": "Plank",
+							"sets": "2",
+							"duration": "20–30 sec",
+							"rest": "45 sec",
+							"target": ["core"],
+							"youtube": "https://www.youtube.com/watch?v=pSHjTRCQxIw"
+						},
+						{
+							"id": "d5-crunch",
+							"name": "Toe Touch Crunch",
+							"sets": "2",
+							"reps": "12",
+							"rest": "45 sec",
+							"target": ["abs"],
+							"youtube": "https://youtube.com/shorts/macaY_gB_EE?feature=share"
+						}
+					]
+				},
+				{
+					"type": "cooldown",
+					"title": "Cooldown",
+					"duration": "5 min",
+					"exercises": [
+						{
+							"id": "d5-stretch",
+							"name": "Full Body Stretch",
+							"sets": "1",
+							"duration": "5 min",
+							"target": ["recovery"]
+						}
+					]
+				}
+			]
+		}
+	},
+	"nutrition": {
+		"dailyTargets": {
+			"calories": {
+				"trainingDay": {
+					"target": "1700–1800 kcal",
+					"note": "Moderate deficit for body recomposition"
+				},
+				"restDay": {
+					"target": "1500–1600 kcal",
+					"note": "Lower intake on rest days"
+				},
+				"weeklyAverageDeficit": "≈300 kcal/day"
+			},
+			"protein": {
+				"target": "100–120 g",
+				"perKg": "1.5–1.8 g/kg",
+				"note": "Essential for muscle building and recovery"
+			},
+			"carbohydrates": {
+				"target": "180–200 g",
+				"percentage": "40–45%",
+				"note": "Supports training and energy"
+			},
+			"fats": {
+				"target": "50–60 g",
+				"percentage": "25–30%",
+				"note": "Important for hormonal health"
+			},
+			"water": {
+				"base": "2.5 L",
+				"trainingDay": "3 L",
+				"note": "Increase during workouts"
+			},
+			"sleep": {
+				"target": "7–8 hours",
+				"note": "Critical for recovery and progress"
+			},
+			"dailySteps": {
+				"target": "6,000–8,000",
+				"note": "Light daily activity"
+			}
+		},
+		"macroSplit": {
+			"protein": {
+				"percentage": "25–30%",
+				"priority": "High"
+			},
+			"carbs": {
+				"percentage": "40–45%",
+				"priority": "High"
+			},
+			"fats": {
+				"percentage": "25–30%",
+				"priority": "Moderate"
+			}
+		},
+		"mealTiming": {
+			"preWorkout": {
+				"timing": "30–45 min before training",
+				"guideline": "Light carbs (fruit, dates) or coffee"
+			},
+			"postWorkout": {
+				"timing": "Within 60 minutes",
+				"guideline": "25–30 g protein + carbs"
+			},
+			"dailyDistribution": {
+				"proteinPerMeal": "25–30 g",
+				"mealsPerDay": "4",
+				"note": "Even protein distribution throughout day"
+			}
+		},
+		"foodQualityGuidelines": [
+			{
+				"id": "protein-sources",
+				"title": "Vegetarian Proteins",
+				"items": [
+					"Whey protein",
+					"Paneer",
+					"Tofu",
+					"Greek yogurt",
+					"Dal + rice"
+				]
+			},
+			{
+				"id": "carb-sources",
+				"title": "Quality Carbs",
+				"items": [
+					"Oats",
+					"Rice",
+					"Roti",
+					"Fruits",
+					"Vegetables"
+				]
+			},
+			{
+				"id": "fat-sources",
+				"title": "Healthy Fats",
+				"items": [
+					"Nuts",
+					"Seeds",
+					"Ghee (small amounts)",
+					"Olive oil"
+				]
+			}
+		],
+		"supplements": [
+			{
+				"name": "Whey Protein",
+				"dose": "1 scoop post-workout",
+				"purpose": "Meet daily protein target"
+			},
+			{
+				"name": "Creatine Monohydrate",
+				"dose": "3–5 g daily",
+				"purpose": "Strength and muscle building"
+			}
+		],
+		"rules": [
+			"Protein is non-negotiable daily",
+			"Stay hydrated throughout the day",
+			"Sleep 7–8 hours for recovery",
+			"Track progress weekly, not daily"
+		]
+	}
+}
